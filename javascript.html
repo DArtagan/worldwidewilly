@@ -1,0 +1,252 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>JavaScript Experiments - WorldWideWilly</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="main_style2.css" />
+	<script type="text/javascript" src="scripts/google-analytics.js"></script>
+	<script type="text/javascript" src="scripts/translator.js"></script>
+</head>
+
+<body id="javascript">
+	<div class="container">
+		<div id="header">
+			<h1><a href="index.html" class="main_title"><img src="images/The_W_Logo3.png" class="logo" />JavaScript Experiments - WorldWideWilly</a></h1>	
+		</div>
+		
+		<div id="sidebar_right">
+      <div id="nav">
+        <a href="index.html" class="nav homenav">Home</a>
+        <a href="resume.html" class="nav resumenav">R&eacute;sum&eacute;</a>
+        <a href="thoughts" class="nav thoughtsnav">Thoughts</a>
+        <a href="projects.html" class="nav projectsnav">Projects</a>
+        <a href="contact.html" class="nav contactnav">Contact</a>
+        <a href="end.html" class="nav endnav">The End</a>
+      </div>
+		</div>
+		
+		<div id="content">
+			<h2 class="title">JavaScript Experiments</h2>
+				<p class="first_paragraph">This page is devoted to my adventures in the world of JavaScript.  Though initially simple I hope they will become more advanced and interesting as I learn more. You will might not be able to fully understand each of the experiments because much of if takes place in the code; I'll try to provide a description.</p>
+				<br />
+	<h3>Experiment #1</h3>
+		<p>It's the friendly thing to do.</p>
+		<script type="text/javascript"> {
+			document.write("<p class=\"example\">");
+			document.write("Hello World!");
+			document.write("</p>");}
+		</script>
+			<h3>Experiment #2</h3>
+				<p>Combine two strings and display them in the html:</p>
+				<script type="text/javascript"> {
+					txt1="What a very";
+					txt2="nice day";
+					txt3=txt1+" "+txt2;
+					document.write("<p class=\"example\">");
+					document.write(txt3);
+					document.write("</p>");}
+				</script>
+			<h3>Experiment #3</h3>
+				<p>Greets you according to the time of day and displays the proper hour in 12 hour format.<p>
+				<p class="example"><script type="text/javascript">
+					var d = new Date()
+					var time = d.getHours()
+					if (time<10) {
+						document.write("Good Morning: ");}
+					else if (time>=10 && time<16) {
+						document.write("Good Day: ");}
+					else if (time>=16 && time<21) {
+						document.write("Good Evening: ");}
+					else {
+						document.write("Good Night: ");}
+					
+					if (time==0) {
+						time=12;}
+					if (time>12) {
+						time-=12;
+						z = "PM"}
+					else {
+						z = "AM"}
+					
+					document.write(time + " " + z);
+				</script></p>
+			<h3>Experiment #4</h3>
+			<p>Tells you the day of the week using switches and an alert box.
+				<p class="example"><script type="text/javascript">
+					var d=new Date();
+					theDay=d.getDay();
+					switch (theDay) {
+					case 1:
+						WeekDayText="Monday";
+						break;
+					case 2:
+						WeekDayText="Tuesday";
+						break;
+					case 3:
+						WeekDayText="Wednesday";
+						break;
+					case 4:
+						WeekDayText="Thursday";
+						break;
+					case 5:
+						WeekDayText="Friday";
+						break;
+					case 6:
+						WeekDayText="Saturday";
+						break;
+					case 0:
+						WeekDayText="Sunday";
+						break;
+					default:
+						WeekDayText="I'm looking forward to this weekend!";}
+					
+					function show_alert() {
+					alert(WeekDayText);}
+					document.write("<input type=\"button\" onclick=\"show_alert()\" value=\"What's the day of the week?\" />");
+				</script></p>
+			<h3>Experiment #5</h3>
+			<p>Name Check! (Don't worry, it doesn't store information) (Sorry, it's still in the works.)</p>
+				<script type="text/javascript">
+					switch (n) {
+					case 1:
+						document.write("<p class=\"example\">Hello ");
+						document.write(name);
+						document.write("</p>");
+						break;
+					case 2:
+						function show_confirm() {
+						var r=confirm("Is this your name? (Cancel=No)");
+						if (r==true) {
+							document.write("<p class=\"example\">Hello ");
+							document.write("Excellent, thank you.");
+							document.write("</p>");}
+						else {
+							name=prompt("Please enter your name","Mr. Man");}}}
+				</script>
+				<input type="button" value="Name Check" onclick="show_confirm()" />
+			<h3>Experiment #6</h3>
+			<p>Rocky's far superior (and actually working) Name Check.</p>
+				<script type="text/javascript">
+					function name_check()
+					{
+					var names = new Array("Rubeus Hagrid", "Albus Dumbledore", "Sirius Black", "Minerva McGonagall", "Ronald Weasley", "Hermione Granger", "Ginevra Weasley", "Harry Potter", "Draco Malfoy", "Parvati Patil", "Padma Patil", "Fred Weasley", "George Weasley", "Cedric Diggory", "Amos Diggory", "Cho Chang", "Arthur Weasley", "Molly Weasley", "Fleur Delacour", "Viktor Krum", "Severus Snape", "Lavender Brown", "Seamus Finnegan", "Lee Jordan", "Vincent Crabbe", "Gregory Goyle", "Horace Slughorn", "Neville Longbottom", "Luna Lovegood", "Xenophilius Lovegood", "Lucius Malfoy", "Avery Nott", "Susan Bones", "Justin Finch-Fletchley", "Aberforth Dumbledore", "Peter Pettigrew", "Bill Weasley", "Charlie Weasley", "Hannah Abbot", "Remus Lupin", "Nymphadora Tonks", "Todd Tonks", "Andromeda Tonks", "Bellatrix Lestrange", "James Potter", "Lily Potter", "Tom Riddle", "Alastor Moody", "Bartemius Crouch", "Vernon Dursley", "Dudley Dursley", "Petunia Dursley", "Pansy Parkington", "Oliver Wood", "Phineas Nigellus Black", "Cornelius Fudge", "Dolores Umbridge", "Rufus Scrimgeour", "Stan Shunpike", "Dean Thomas", "Michael Corner", "Zacharias Smith", "Gabrielle Delacour", "Millicent Bulstrode", "Olive Hornby", "Angelina Johnson", "Alicia Spinnet", "Katie Bell", "Roger Davies", "Filius Flitwick", "Godric Gryffindor", "Helga Hufflepuff", "Rowena Ravenclaw", "Salazar Slytherin", "Dedalus Diggle", "Kingsley Shacklebolt", "Piers Polkin", "Marge Vernon", "Theodore Nott", "Sybill Trelawney", "Marvolo Gaunt", "Morfin Gaunt", "Ignotus Peverell", "Bathilda Bagshot", "Rita Skeeter", "Igor Karkaroff");
+					var name = names[Math.floor(Math.random()*names.length)];
+					var span = document.getElementById("name_check");
+					if (confirm("Is this your name: " + name + "?"))
+					{
+					   span.innerHTML="<p>" + "Hurrah! " + name + " Hello!" + "</p>";
+					}
+					else
+					{
+					   if (name = prompt("Then what is your name?"))
+					   {
+					     span.innerHTML="<p>" + "Well aren't you so special, " + name + " the jerk!" + "</p>";
+					   }
+					   else
+					   {
+					     span.innerHTML="<p>" + "Liar, that's your name." + "</p>";
+					   }
+					}
+					}
+				</script>
+				<span id="name_check"></span>
+				<input type="button" value="Name Check" onclick="name_check()" />
+		<h3>Experiment #7</h3>
+			<p>Translation Bar- Look down at the bottom of the page, those flags are the results of this experiment.  They work very nicely, but I wish the translated page didn't have the google frame at the top.  If you know a way to remedy this let me know.</p>
+		<h3>Experiment #8</h3>
+			<p>A tool to look at varying text sizes.</p>
+				<script type="text/javascript">
+					function font_size() {
+						var check = 0;
+						var unit = 0;
+						var start = 0;
+						var end = 0;
+						var increment = 0;
+						if (confirm("Do you want to test font sizes now?")) {
+							do {
+								unit = prompt("Enter your unit of measurement (px, em, %)","");
+								if (unit == "null") {
+									break;
+								}
+								else if (unit != ("px" || "em" || "%")) {
+									alert("You did not enter a proper value, try again.");
+									check = 0;
+								}
+								else {
+									check = 1;
+								}
+							} while (check == 0);
+							check = 0
+							do {
+								if (unit == "null") {
+									break;
+								}
+								var start = prompt("Your starting size","");
+								if (start == "null") {
+									break;
+								}
+								var end = prompt("Your ending size","");
+								if (end == "null") {
+									break;
+								}
+								var increment = prompt("The increment by which to increase the size","");
+								if (increment == "null") {
+									break;
+								}
+								start = parseFloat(start);
+								end = parseFloat(end);
+								increment = parseFloat(increment);
+								if (isNaN(start) || isNaN(end) || isNaN(increment)) {
+									check = 0;
+								};
+								else if (start <= 0 || end <= 0) {
+									check = 0;
+								};
+								else if (start > end && increment >= 0) {
+									check = 0;
+								};
+								else if (end > start && increment <= 0) {
+									check = 0;
+								};
+								else if (check == 0) {
+									alert("You entered a value wrong. Recheck your work and try again.")
+								};
+								else {
+									check = 1
+								}
+							} while (check == 0);
+							for (i = start; i <= end; i = i + increment) {
+								document.write("<p style=\"white-space:pre;font-size:" + i + unit + ";\">" + i + " " + unit + "    The quick brown fox jumps over the lazy dog.</p>");
+							}
+						}
+						else {
+							document.write("<p>Sorry, but you didn't want to participate.</p>");
+						}
+					}
+				</script>
+				<input type="button" value="Font Size Comparison" onclick="font_size()" />
+		<h3><a href="savings.html">Experiment #9</a></h3>
+			<p><a href="savings.html">Here</a> will be a calculator produced using JavaScript, which is to help with figuring out savings and spending.
+		</div>
+						
+		<div id="footer">
+			<span>&copy; William H. Weiskopf IV 2009</span>
+			<div class="translate">
+					<a onClick="javascript: translator('en|es')"><img src="images/flags/spanish.jpg" /></a>
+					<a onClick="javascript: translator('en|fr')"><img src="images/flags/french.jpg" /></a>
+					<a onClick="javascript: translator('en|de')"><img src="images/flags/german.jpg" /></a>
+					<a onClick="javascript: translator('en|zh-CN')"><img src="images/flags/chinese.jpg" /></a>
+					<a onClick="javascript: translator('en|ja')"><img src="images/flags/japanese.jpg" /></a>
+					<a onClick="javascript: translator('en|ar')"><img src="images/flags/arabic.png" /></a>
+					<a onClick="javascript: translator('en|it')"><img src="images/flags/italian.jpg" /></a>
+					<a onClick="javascript: translator('en|pt')"><img src="images/flags/portuguese.jpg" /></a>
+					<a onClick="javascript: translator('en|ru')"><img src="images/flags/russian.png" /></a>
+					<a onClick="javascript: translator('en|ko')"><img src="images/flags/korean.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

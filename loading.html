@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script id="jsPlaceHolder" type="text/javascript"></script>
+    <script id="jsAlwaysPresent" type="text/javascript">
+    //<![CDATA[
+    var timerId, timeout;
+    function init () {
+        try {
+            loadMyScript();
+            timeout = 10;
+            timerId = null;
+            loadWait();
+        }
+        catch (e) { alert("Dynamic Javascript load failed. Error name: " + e.name + ". Error messag
+    }
+    function loadMyScript() {
+        if ( !(document.createElement) ) {
+            alert( 'Browser does not support dynamic script loading' );
+            return;
+        }
+        document.getElementById('progress').innerHTML = 'Loading';
+        var jsMyNode = document.createElement('script');
+        jsMyNode.type = 'text/javascript';
+        jsMyNode.src = 'http://worldwidewilly.immortalkeep.com/scripts/feed2js/feed2js.php?src=http%3A%2F%2Fpipes.yahoo.com%2Fpipes%2Fpipe.run%3F_id%3D9485f44214b4152f891bc72b462dc272%26_render%3Drss&amp;desc=1';
+        jsMyNode.id  = 'jsMyScript';
+        var jsNode = document.getElementById('jsPlaceHolder');
+        var headNode = document.getElementsByTagName('head')[0];
+        var newJsNode = null;
+        if ( !!(jsNode) && !!(headNode) )
+            newJsNode = headNode.replaceChild( jsMyNode, jsNode );
+        if ( !(newJsNode) )
+            alert( 'Program load failure' );
+        return;
+    }
+    function loadWait() {
+        // Dynamically loaded code is not in our namespace until the entire page is loaded,
+        // <body onload="xxx();"> -> xxx() would not see the loaded coded necessarily, so we wait..
+        if ( !!( timerId ) ) {
+            if ( timeout == 0 ) {
+                document.getElementById('progress').innerHTML = "Load failed.";
+                alert( "Program load timeout" );
+                return;
+            }
+            if ( !!( this.myObj ) ) {
+                start(); // Ok to launch the actual program
+                return;
+            }
+            timeout -= 1;
+        }
+        document.getElementById('progress').innerHTML += '.';
+        timerId = setTimeout( "loadWait()", 100); // You can set this to 100 if you do not print d
+        return;
+    }
+    function start(){
+        if ( !( this.myObj ) ) {
+            alert ( 'Called too early, there is no this.myObj!' );
+            return;
+        }
+        document.getElementById('progress').innerHTML = 'Started!';
+        alert ( 'I am happily running!' );
+        return;
+    }
+    //]]>
+    </script>
+  </head>
+  <body onload="run();">
+    <div id="progress">Not started.</div>
+    </form>
+  </body>
+  <script id="windowOnload" type="text/javascript">
+     window.onload = init;
+  </script>
+</html>

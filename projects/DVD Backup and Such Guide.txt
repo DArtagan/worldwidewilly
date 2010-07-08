@@ -1,0 +1,82 @@
+Backing Up DVDs and Such Guide
+
+This guide should only be used for backing up DVDs you personally, legally own.  Check the copyright laws for your country.
+
+1. Plug in external hard drive if there isn't enough room on your computer
+2. Open RipIt4Me
+3. If you haven't already, insert DVD into the DVD drive
+3. Click the "1-Click Mode" Button in RipIt4ME
+4. Select the drive letter of the DVD Drive with the DVD (e.g., "E:")
+5. Under "Target directory..." click the box with a dot in it
+6. Select your external hard drive located under "My Computer" (or wherever you would like to put the temporary movie files)
+7. The "Target directory..." text box should have something like "G:\"
+8. At the very end of the text type a name for your DVD, this will be the temporary folder created by RipIt4Me
+9. Hit "Next" at the bottom of the window
+10. Things should run automatically in DVD Decrypter, if not hit "Next", or "Save", or the icon of a DVD going to a Hard Drive, until things run (indicated by green bars moving in the DVD Decrypter window)
+11. After much processing DVD Decrypter will close, then RipIt4Me will run for a while, then DVD Shrink will open.
+12. Close the RipIt4Me window
+13. DVD Shrink allows you to clear features of the DVD you don't plan on using, specifically so that a ~8 GB movie DVD can fit on a normal 4 GB disc.  The green and red bar monitors your file size (green = fit on normal DVD, red = not fit)
+14. Using the left DVD Structure list you can select each section of the DVD, or the entire disc
+15. After selecting on the left options are given on the right, check which you want to include in the final version:
+	a. Video Compression (generally choose "Automatic" or "No Compression)
+	b. Audio Encoding Streams
+	c. Subpicture (Subtitles)
+16. If you want the DVD in its entirety (you will only use these files digitally/on your computer or your DVD drive can burn Dual Layer Disc (which you also have)) select the DVD header on the left, then set Video to "No Compression", enable all audio streams, and all subtitles.
+17. After selecting all settings click the "Backup!" button at the top.  It may tell you the DVD is too big.  If you are using the DVD digitally or are usingDual Layer DVDs click "Yes".  If not click "No" reduce the file size more, and repeat this step.
+18. If prompted select the region the DVD is ment to play in (e.g., "1", "2") found on the back of the box (on the background of a globe)
+19. In the drop-down box under "Select backup target:" choose "ISO Image File"
+20. In the text box under "Select target image file:" enter where you want to save the DVD image file, but don't save it in the temporary folder you created in RipIt4Me (you can also use the "Browse..." button), make sure the text line ends with ".ISO" or ".iso"
+21. Click "OK" down at the bottom and wait for the video encoding to complete
+22. Click "Ok" when video encoding is completed
+23. Close the DVD Shrink window
+22. Delete the temporary folder created using RipIt4Me, but make sure you don't delete the new .iso file you just created in DVD Shrink
+
+What do you want to do next
+	I. Keep a copy of the DVD on your computer as a backup
+	II. Burn a copy of the DVD
+	III. Watch the DVD file on your computer (far more portable than carrying around discs)
+	IV. Make digital video file(s) from the DVD for an iPod or other portable player, use in a slide show, on a website, mixed in with a video you are editing...
+
+I. Keep a copy of the DVD on your computer as a backup
+	1. Your done, just make sure the .iso file is where you want it
+
+II. Burn a copy of the DVD
+	1. Most likely your computer has a program to burn .iso files with, but if not, use ImgBurn
+	2. Select the .iso as the file to burn to the DVD, you might have to change the program's mode to burn .iso files (depending on the program)
+	3. Burn the DVD
+	
+III. Watch the DVD file on your computer
+	A. Just watch the movie using VLC player
+	B. Mount the .iso in a virtual drive using Virtual CloneDrive as if it were a real DVD (Most users won't need this)
+	
+	A. Watch the Movie
+		1. Open VLC 
+		2. Click the "Media" menu at the top
+		3. Click "Open File..."
+		4. Open the .iso file of your DVD
+		5. Enjoy the DVD
+	B. Mount the .iso file as if it were a physical disc
+		*Assumeing you have Virtual CloneDrive installed and at least one drive active
+		1. Right click on the .iso DVD file
+		2. Click on "Mount (VCD"...
+		3. You now have the DVD in your virtual drive, do whatever you would normally do with a DVD
+		
+IV. Make digital video file(s) from the DVD
+	1. Open Handbrake
+	2. Click the "Source" Button at the top of the window
+	3. Click on "Video File"
+	4. Open the .iso file of your DVD
+	5. There are 4 drop down boxes under the Source heading.
+		a. Title- Movies contained on the DVD (e.g., Main Movie, Bonus Movies, Shorts, Outakes)
+		b. Angle- Multiple angles/video streams for the title
+		c. Chapters- Chapter of the movie you want to copy
+	6. In the file textbox under the destinations heading choose where to save the movie
+	7. Select a pre-set from under one of the preset headings on right of the window.
+		a. Apple heading has presets for Apple devices
+		b. Regular heading has presets for normal video files (Normal is for normal quality, High Profile is for better quality)
+		c. Legacy heading has presets for older Apple devices.  Try these if your Apple doesn't like the normal Apple presets.
+	8. You probably don't need to, but if you so choose you can customize the settings under each of the tabs at the bottom left of the window (e.g., Picture, Video Filters)
+	9. Press the start button at the top of the window
+	10. After it finishes (command prompt no longer visible) close HandBrake
+	11. Use your video file however you like 
+	*For those using iTunes to sync to a device, you must double click on the file and begin play it in iTunes once, before iTunes recognizes its presence and will allow you to sync it
