@@ -1,0 +1,16 @@
+Options -Indexes FollowSymLinks MultiViews All 
+php_flag register_globals 0
+
+RewriteEngine On
+
+RewriteRule ^$ frontend/index.html [L]
+
+RewriteCond %{REQUEST_URI} /
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ frontend/$1
+
+RewriteCond %{REQUEST_URI} /
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^frontend/(.*)$ backend/php/index.php?action=$1

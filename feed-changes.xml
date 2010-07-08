@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+	<channel>
+
+		<title>The title of my RSS 2.0 Feed</title>
+		<link>http://www.example.com/</link>
+		<description>This is my rss 2 feed description</description>
+		<lastBuildDate>Sun, 07 Mar 2010 19:00:00 GMT</lastBuildDate>
+		<!--Add 7/6 (daylight savings)hours to MTN time>-->
+		<language>en-us</language>
+		<atom:link href="http://www.worldwidewilly.immortalkeep.com/feed-changes.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>New RSS Feed</title>
+			<link>http://worldwidewilly.immortalkeep.com/feed-changes.xml</link>
+			<pubDate>Sun, 07 Mar 2010 18:25:00 GMT</pubDate>
+			<description>Implemented a new RSS feed for changes on the site (that don't include the blog).</description>
+		</item>
+		<item>
+			<title>DVD Backup Guide</title>
+			<link>http://worldwidewilly.immortalkeep.com/projects/DVD%20Backup%20and%20Such%20Guide.txt</link>
+			<pubDate>Sun, 07 Mar 2010 19:00:00 GMT</pubDate>
+			<description>I have posted a guide to backing up DVD Movies (to a physical or digital copy).  Remember this is for movies you legally own.  Make sure to check local copyright laws.</description>
+		</item>
+		
+	</channel>
+</rss>
