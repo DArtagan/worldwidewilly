@@ -1,0 +1,22 @@
+span.sfcode,
+div.sfcode {
+	background:#EBEBEB;
+	color:maroon!important;
+	font-family:monospace,Courier!important;
+	padding:3px 5px 3px 3px;
+	margin:8px 8px 8px 22px;
+	font-size:12px!important;
+	border:1px dotted #D7D7D7;
+}
+
+span.sfcode{
+	display:block;
+	padding:3px 5px;
+	margin:8px 8px 8px 16px;
+}
+
+div.sfcode p {
+	font-family:monospace,Courier!important;
+	font-size:12px!important;
+	color:maroon!important;
+}

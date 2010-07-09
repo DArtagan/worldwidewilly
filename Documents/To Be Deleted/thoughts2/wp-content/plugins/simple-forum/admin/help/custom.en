@@ -1,0 +1,23 @@
+Simple:Press Forum
+Custom Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[Skin_Customisation]
+
+A 'skin set' contains a CSS styling file and optional background graphics. If you decide to create your own skin
+to change the look of the forum, it is recommended that you make a copy of an existing skin, rename it and work on the copy.
+The best skin to use for this is the 'default' which contains extra comments and information to aid development.<br /><br />
+A 'skin' must be contained in it's own folder with a unique name. The name given to the folder must also be the name given to the
+skins CSS file.<br /><br />
+The skin you wish to use is selected in the 'Style' tab of the 'Forum > Manage Options' admin screen.
+[end]
+
+[Icon_Customisation]
+
+An 'Icon Set' is a complete collection of all icons used in the forum. if you wish to create a unique icon set it is recommended
+that you create a copy of one of the supplied icon set folders and give it a unique name. Any icons you create must be given the same name as existing icons.<br /><br />
+The icon set you wish to use is selected in the 'Style' tab of the 'Forum > Manage Options' admin screen.<br /><br />
+Icons can come in two varieties - those that are simply an image and require a textual context to be displayed - and those with graphical text. If you use the latter, you can turn off
+the textual display beside icons in the same 'Style' tab where you select the set to use.
+[end]

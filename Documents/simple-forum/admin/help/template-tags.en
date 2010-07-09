@@ -1,0 +1,675 @@
+Simple:Press Forum
+Template Tags Help File (English)
+$LastChangedDate: 2009-06-07 21:34:20 +0100 (Sun, 07 Jun 2009) $
+$Rev: 2011 $
+
+[sf_recent_posts_tag]
+
+<p><b>sf_recent_posts_tag</b>(<i>$limit, $forum, $user, $postdate, $listtags, $forumids, $posttime</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>5</td>
+</tr>
+<tr>
+	<td>$forum</td><td>Show the forum title</td><td>true/false</td><td>false</td>
+</tr>
+<tr>
+	<td>$user</td><td>Show the post authors name</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show the date of the post</td><td>true/false</td><td>false</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap outout in unordered HTML list tags</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$forumids</td><td>comma delimited list of forum ids to show</td><td>optional</td><td>0</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show the time of the post (requires $postdate to be true)</td><td>true/false</td><td>false</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">p.sftagli</td><td>styles the 'li' elements if $listags is true</td>
+</tr>
+<tr>
+	<td width="150">p.sftagp</td><td>styles the 'p' element that wraps the forum name, user name, date and time</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+&lt;ul&gt;<br />
+<b>&lt;?php sf_recent_posts_tag(5, false, true, true, true, 0, true); ?&gt;</b><br />
+&lt;/ul&gt;
+[end]
+
+[sf_recent_posts_alt_tag]
+
+<p><b>sf_recent_posts_alt_tag</b>(<i>$limit, $forum, $user, $postdate, $listtags, $posttime</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>5</td>
+</tr>
+<tr>
+	<td>$forum</td><td>Show the forum title</td><td>true/false</td><td>false</td>
+</tr>
+<tr>
+	<td>$user</td><td>Show the post authors name</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show the date of the post</td><td>true/false</td><td>false</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap outout in unordered HTML list tags</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show the time of the post (requires $postdate to be true)</td><td>true/false</td><td>false</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">p.sftagli</td><td>styles the 'li' elements if $listags is true</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+&lt;ul&gt;<br />
+<b>&lt;?php sf_recent_posts_alt_tag(5, false, true, true, 0, true); ?&gt;</b><br />
+&lt;/ul&gt;
+[end]
+
+[sf_latest_posts]
+
+<p><b>sf_latest_posts</b>(<i>$limit</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>5</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sf-latest-header</td><td>styles the 'div' element that wraps the header output which contains the poster name, forum link, topic link and date</td>
+</tr>
+<tr>
+	<td width="150">.sf-latest-content</td><td>styles the 'div' element that wraps the post content</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_latest_posts(5); ?&gt;</b><br />
+[end]
+
+[sf_latest_posts_expanded]
+
+NOTE: This is not an ordinary tag. It replicates the new post list from the forum and
+allows you to place that list on another page or post. For proper results you need to
+also include the forum CSS 'skin' file that you are using.
+
+<p><b>sf_latest_posts_expanded</b>(<i>$limit</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>5</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_latest_posts_expanded(5); ?&gt;</b><br />
+[end]
+
+[sf_new_post_announce]
+
+<p><b>sf_new_post_announce()</b></p>
+<br /><br />
+This is a special tag that can display the most recent X number of posts in a sidebar,
+also displaying those unread by the current user. This tag is formatted in the Admin Options
+'Tags' tab.<br /><br />
+As well as placing the tag on your sidebar, you also need to turn the option on. You can also
+set a timer so that the tag contents get refreshed regularly.<br /><br />
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">#sfannounce</td><td>styles the 'div' element that wraps the entire announce tag output</td>
+</tr>
+<tr>
+	<td width="150">.sfannouncetable</td><td>styles the 'table' element that contains the announce tag output</td>
+</tr>
+<tr>
+	<td width="150">.sfannounceicon</td><td>styles the 'td' element that contains the announce icon</td>
+</tr>
+<tr>
+	<td width="150">.sfannounceentry</td><td>styles the 'td' element that contains the announce data</td>
+</tr>
+</table>
+[end]
+
+[sf_author_posts]
+
+<p><b>sf_author_posts</b>(<i>$author_id, $showforum=true, $showdate=true, $limit=0</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$author_id</td><td>author to show the posts for</td><td>user ID</td><td>-</td>
+</tr>
+<tr>
+	<td>$showforum</td><td>Show the forum title</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$showdate</td><td>show the date of the latest post</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$limit</td><td>number of posts to show</td><td>number</td><td>0 (show all)</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sf-authortopics</td><td>styles the 'div' element that wraps the entire author posts tag output</td>
+</tr>
+<tr>
+	<td width="150">.sf-authorforum</td><td>styles the 'div' element that wraps the forum name</td>
+</tr>
+<tr>
+	<td width="150">.sf-authorlink</td><td>styles the 'div' element that wraps the topic link</td>
+</tr>
+<tr>
+	<td width="150">.sf-authordate</td><td>styles the 'div' element that wraps the date</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_author_posts(52, true, true); ?&gt;</b><br />
+[end]
+
+[sf_stats_tag]
+
+<p><b>sf_stats_tag</b>(<i>$onlinestats=true, $forumstats=true, $memberstats=true, $topstats=true</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$onlinestats</td><td>display the users on line</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$forumstats</td><td>display the group, forum, topic, post stats</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$memberstats</td><td>display the member stats</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$topstats</td><td>display the top posters stats</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sfstatonline</td><td>styles the 'ul' element that wraps the online stats data</td>
+</tr>
+<tr>
+	<td width="150">.sfstatadmin</td><td>styles the 'li' element that wraps admin name</td>
+</tr>
+<tr>
+	<td width="150">.sfstatuser</td><td>styles the 'li' element that wraps user name</td>
+</tr>
+<tr>
+	<td width="150">.sfstatguest</td><td>styles the 'li' element that wraps guest label</td>
+</tr>
+<tr>
+	<td width="150">.sfstatmax</td><td>styles the 'li' element that wraps the maximum online</td>
+</tr>
+<tr>
+	<td width="150">.sfstatforums</td><td>styles the 'ul' element that wraps the forum stats data</td>
+</tr>
+<tr>
+	<td width="150">.sfstatforum</td><td>styles the 'li' element that wraps the forum stats label</td>
+</tr>
+<tr>
+	<td width="150">.sfstatgroup</td><td>styles the 'li' element that wraps the number of groups</td>
+</tr>
+<tr>
+	<td width="150">.sfstatforum</td><td>styles the 'li' element that wraps the number of forums</td>
+</tr>
+<tr>
+	<td width="150">.sfstattopic</td><td>styles the 'li' element that wraps the number of topics</td>
+</tr>
+<tr>
+	<td width="150">.sfstatpost</td><td>styles the 'li' element that wraps the number of posts</td>
+</tr>
+<tr>
+	<td width="150">.sfstatmembers</td><td>styles the 'ul' element that wraps the member stats</td>
+</tr>
+<tr>
+	<td width="150">.sfstatmembernum</td><td>styles the 'li' element that wraps the number of members</td>
+</tr>
+<tr>
+	<td width="150">.sfstatguestnum</td><td>styles the 'li' element that wraps the number of guests</td>
+</tr>
+<tr>
+	<td width="150">.sfstatadminnum</td><td>styles the 'li' element that wraps the number of admins</td>
+</tr>
+<tr>
+	<td width="150">.sfstattop</td><td>styles the 'ul' element that wraps the top poster stats</td>
+</tr>
+<tr>
+	<td width="150">.sfstattopname</td><td>styles the 'li' element that wraps the top poster name</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_stats_tag(true, true, true, true); ?&gt;</b><br />
+[end]
+
+[sf_group_link]
+
+<p><b>sf_group_link</b>(<i>$group_id, $linktext, $listtags=true</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$group_id</td><td>ID of ther Group to display</td><td>Group ID</td><td>-</td>
+</tr>
+<tr>
+	<td>$linktext</td><td>Text for link - leave as empty string to use group name</td><td>-</td><td>-</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap outout in unordered HTML list tags</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+&lt;ul&gt;<br />
+<b>&lt;?php sf_group_link(5, '', true); ?&gt;</b><br />
+&lt;/ul&gt;
+[end]
+
+[sf_forum_link]
+
+<p><b>sf_forum_link</b>(<i>$forum_id, $linktext, $listtags=true</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$forum_id</td><td>ID of ther Forum to display</td><td>Forum ID</td><td>-</td>
+</tr>
+<tr>
+	<td>$linktext</td><td>Text for link - leave as empty string to use forum name</td><td>-</td><td>-</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap outout in unordered HTML list tags</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+&lt;ul&gt;<br />
+<b>&lt;?php sf_forum_link(17, '', true); ?&gt;</b><br />
+&lt;/ul&gt;
+[end]
+
+[sf_topic_link]
+
+<p><b>sf_topic_link</b>(<i>$forum_id, $topic_id, $linktext, $listtags=true</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$forum_id</td><td>ID of ther Forum to display</td><td>Forum ID</td><td>-</td>
+</tr>
+<tr>
+	<td>$topic_id</td><td>ID of ther Topic to display</td><td>Topic ID</td><td>-</td>
+</tr>
+<tr>
+	<td>$linktext</td><td>Text for link - leave as empty string to use topic title</td><td>-</td><td>-</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap outout in unordered HTML list tags</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+&lt;ul&gt;<br />
+<b>&lt;?php sf_topic_link(17, 334, '', true); ?&gt;</b><br />
+&lt;/ul&gt;
+[end]
+
+[sf_forum_dropdown]
+
+<p><b>sf_forum_dropdown</b>(<i>$forum_ids</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>-</th>
+</tr>
+<tr>
+	<td>$forum_ids</td><td>ID's of forums to display links to (comma delimited in quotes)</td><td>Forum IDs</td><td>Required</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_forum_dropdown("13,18,19,24"); ?&gt;</b><br />
+[end]
+
+[sf_show_avatar]
+
+<p><b>sf_show_avatar</b>(<i>$size=0</i>)</p>
+<br /><br />
+Returns current users avatar (as defined by the forum) in an image tag<br />
+Parameters: You can also optionally pass a 'size' parameter which will resize the image width and height.<br />
+The tag is given a class name of 'sfavatartag'.
+[end]
+
+[sf_show_members_avatar]
+
+<p><b>sf_show_members_avatar</b>(<i>$userID, $size=0</i>)</p>
+<br /><br />
+Will display the avatar of any user/member by passing in their user id.<br />
+You can also optionally pass a 'size' parameter which will resize the image width and height.<br />
+Returns the users avatar (as defined by the forum) in an image tag<br />
+The tag is given a class name of 'sfavatartag'.
+[end]
+
+[sf_show_forum_avatar]
+
+<p><b>sf_show_forum_avatar</b>(<i>$email, $size=0</i>)</p>
+<br /><br />
+Will display the avatar of any user OR guest who has posted on the forum by passing their email address.<br />
+You can also optionally pass a 'size' parameter which will resize the image width and height.<br />
+Returns the users avatar (as defined by the forum)  or default forum avatar, in an image tag<br />
+The tag is given a class name of 'sfavatartag'.
+[end]
+
+[sf_pm_tag]
+
+<p><b>sf_pm_tag</b>(<i>$display</i>, <i>$usersonly</i>)</p>
+<br /><br />
+Will display default text with the number of unread PMs in the current users PM inbox.  A link to the users PM inbox
+will also be displayed.<br /><br />
+The $display parameter tells the template tag to either display the new PM count and inbox hyperlink
+with some default text ($display = true) or to simply return the number of new PMs and the hyperlink
+in an array ($display = false).<br /><br />
+The default text is "You have # PM(s) in your inbox.".  The word 'inbox' will be a hyperlink to the users PM inbox.
+If the user is a guest or does not have PM privileges, the default text is "You do not have PM privileges.".
+The default text for users with no PM privileges can be supressed when using the default through the use of the $usersonly parameter.<br /><br />
+If you wish to simply get the number of unread PMs and inbox hyperlink and provide your own text, $display should be set to false.  In this case, the $usersonly parameter is ignored and an array with elements 'count' and 'url' is returned. A PM count value of -1 is returned for guests or users without PM privileges.<br /><br />
+For the default text, the tag is given a class name of 'sfpmcount'.
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sfpmcount</td><td>styles the 'p' element wraps the pm inbox info</td>
+</tr>
+</table>
+[end]
+
+[sf_sendpm_tag]
+
+<p><b>sf_sendpm_tag</b>(<i>$userid</i>, <i>$text</i>)</p>
+<br /><br />
+This tag will display a link to allow users to send a PM to a registered user.  It can be used on pages other than a forum page.  The tag will display default text for the link unless the optional $text argument is passed to the template tag routine.  If you specify the $text argument, you need to specify where in the string you want the link inserted by the sequence %%.  For example:
+<br /><br />
+	$output = '<a href="%%" title="Send PM" >Send PM</a>';
+<br /><br />
+If the person viewing the site is not a registered member or does not have PM permissions, 	then an empty string is returned.
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sfsendpmtag</td><td>styles the 'a' element wraps the pm send link</td>
+</tr>
+</table>
+[end]
+
+[sf_linked_topic_post_count]
+
+<p><b>sf_linked_topic_post_count</b>()</p>
+<br /><br />
+This tag can be placed within the blog comments template and for linked blog/topic posts will display the number of
+posts currently made against that topic.
+Useful in conjunction with the option to append topic posts to comments for linked posts.
+[end]
+
+[sf_add_new_topic_tag]
+
+<p><b>sf_add_new_topic_tag</b>(<i>$linktext, $beforelink, $afterlink, $beforetext, $aftertext</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$linktext</td><td>Text to display in link. Use %FORUMNAME% as a placeholder</td><td>text</td><td>Add new topic in the %FORUMNAME% forum</td>
+</tr>
+<tr>
+	<td>$beforelink</td><td>Text/HTML before the link</td><td>text/HTML</td><td>none</td>
+</tr>
+<tr>
+	<td>$afterlink</td><td>Text/HTML after the link</td><td>text/HTML</td><td>non</td>
+</tr>
+<tr>
+	<td>$beforetext</td><td>Text/HTML before link text</td><td>text/HTML</td><td>none</td>
+</tr>
+<tr>
+	<td>$aftertext</td><td>Text/HTML after link text</td><td>text/HTML</td><td>none</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_add_new_topic_tag("Create new topic in the %FORUMNAME% forum", '', '', '&lt;h4&gt;', '&lt;/h4&gt;'); ?&gt;</b><br />
+<br />
+<strong>NOTE: The forum used by this tag MUSt be set in the Options > Tags tab</strong>
+[end]
+
+[sf_highest_rated_posts]
+
+<p><b>sf_highest_rated_posts</b>(<i>$limit=10, $forum=true, $user=true, $postdate=true, $listtags=true, $forumids=0</i>)</p>
+<br /><br />
+This tag can be used to display the highest rated posts in the forum.
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>10</td>
+</tr>
+<tr>
+	<td>$forum</td><td>Show the Forum Title</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$user</td><td>Show the Users Name</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show date of posting</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap in li tags (li only)</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$forumids</td><td>comma delimited list of forum id's</td><td>number</td><td>0</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_highest_rated_posts(10, true, true, true, true); ?&gt;
+<br /><br />
+[end]
+
+[sf_most_rated_posts]
+
+<p><b>sf_most_rated_posts</b>(<i>$limit=10, $forum=true, $user=true, $postdate=true, $listtags=true, $forumids=0</i>)</p>
+<br /><br />
+This tag can be used to display the most rated posts in the forum.
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$limit</td><td>How many items to show in the list</td><td>number</td><td>10</td>
+</tr>
+<tr>
+	<td>$forum</td><td>Show the Forum Title</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$user</td><td>Show the Users Name</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$postdate</td><td>Show date of posting</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$listtags</td><td>Wrap in li tags (li only)</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$forumids</td><td>comma delimited list of forum id's</td><td>number</td><td>0</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_most_rated_posts(10, true, true, true, true); ?&gt;
+<br /><br />
+[end]
+
+[sf_sidedash_tag]
+
+<p><b>sf_sidedash_tag</b>(<i>$show_avatar, $show_pm, $redirect, $show_admin_link</i>)</p>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$show_avatar</td><td>Optionally display user avatar in dashboard</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$show_pm</td><td>Optionally show user PM inbox info</td><td>true/false</td><td>true</td>
+</tr>
+<tr>
+	<td>$redirect</td><td>Controls login/logout redirection</td><td>1=home, 2=admin, 3=curpage, 4=forum</td><td>4</td>
+</tr>
+<tr>
+	<td>$show_admin_link</td><td>Optionally display link to admin dashboard</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Styles</th><th>Affected Output</th>
+</tr>
+<tr>
+	<td width="150">.sftagusername</td><td>styles the 'div' element wraps the username input field</td>
+</tr>
+<tr>
+	<td width="150">.sftagpassword</td><td>styles the 'div' element wraps the password input field</td>
+</tr>
+<tr>
+	<td width="150">.sftagremember</td><td>styles the 'div' element wraps the remember me checkbox</td>
+</tr>
+<tr>
+	<td width="150">.sftagguest</td><td>styles the 'p' element wraps the lost password link</td>
+</tr>
+<tr>
+	<td width="150">.sftagavatar</td><td>styles the 'div' element wraps the user avatar</td>
+</tr>
+<tr>
+	<td width="150">.sftag-loggedin</td><td>styles the 'p' element wraps the lost password and register links</td>
+</tr>
+<tr>
+	<td width="150">.sftag-admin</td><td>styles the 'p' element wraps the wp admin link</td>
+</tr>
+<tr>
+	<td width="150">.sftag-logout</td><td>styles the 'p' element wraps the logout link</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_sidedash_tag(true, true, 3, true); ?&gt;</b><br />
+[end]
+
+[sf_blog_linked_tag]
+
+<p><b>sf_blog_linked_tag</b>(<i>$postid, $show_img=true</i>)</p>
+<br /><br />
+This tag can be used to display the link to the forum topic for blog linked posts outside of the blog post content.
+<br /><br />
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+	<th>Parameter</th><th>Description</th><th>Setting</th><th>Default</th>
+</tr>
+<tr>
+	<td>$postid</td><td>Blog post id</td><td>number</td><td>required</td>
+</tr>
+<tr>
+	<td>$show_img</td><td>Show the blog linked topic image</td><td>true/false</td><td>true</td>
+</tr>
+</table>
+<br /><br />
+Example Usage:
+<br /><br />
+<b>&lt;?php sf_blog_linked_tag(10, true); ?&gt;
+<br /><br />
+[end]

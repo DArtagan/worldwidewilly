@@ -1,0 +1,235 @@
+Simple:Press Forum
+Program Hooks Help File (English)
+$LastChangedDate: 2009-01-17 16:45:23 +0000 (Sat, 17 Jan 2009) $
+$Rev: 1239 $
+
+[sf_hook_pre_content]
+
+<b>sf_hook_pre_content()</b>
+<br /><br />
+Displays content prior to everything else – including any textual content that was passed with the
+WordPress Page itself.
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_content]
+
+<b>sf_hook_post_content()</b>
+<br /><br />
+Displays content after any text belonging to the WordPress page but prior to the start of forum display.
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_footer_inside]
+
+<b>sf_hook_footer_inside()</b>
+<br /><br />
+Displays content above the Simple:Press Forum copyright message at the bottom of the forum display. This is
+still within the main div of the forum itself.
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_footer_outside]
+
+<b>sf_hook_footer_outside()</b>
+<br /><br />
+Displays after the copyright message and outside of the forum div itself. Literally the bottom of the page
+prior to your themes footer
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_loginstrip]
+
+<b>sf_hook_post_loginstrip()</b>
+<br /><br />
+Inserts content after the login strip and before the breadcrumbs.
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_breadcrumbs]
+
+<b>sf_hook_post_breadcrumbs()</b>
+<br /><br />
+Inserts content immediately after the breadcrumbs.
+This will display content on all forum views.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_group_header]
+
+<b>sf_hook_group_header()</b>
+<br /><br />
+Displays content on the front (Group/Forum list) page only - after page content
+but before any forum display. Content appears above the admin bar and login strip.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_group]
+
+<b>sf_hook_post_group($groupid)</b>
+<br /><br />
+Displays content after each Group section on the main/front
+Forum listing page. The GROUP_ID is passed as a parameter if needed.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_post_forum]
+
+<b>sf_hook_post_forum($forumid)</b>
+<br /><br />
+Will insert content immediately after each forum row following the forum description.
+The FORUM ID is passed into the hook as a parameter if needed.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_forum_header]
+
+<b>sf_hook_forum_header()</b>
+<br /><br />
+Displays content on the forum (topic listing) page only - after page content but
+before any forum display.
+Content appears above the admin bar and login strip.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_topic]
+
+<b>sf_hook_post_topic($forumid, $topicid)</b>
+<br /><br />
+Inserts content immediately after each topic row. Both the FORUM ID and the TOPIC ID are
+passed into the hook as parameters if needed
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_topic_header]
+
+<b>sf_hook_topic_header()</b>
+<br /><br />
+Displays content on the topic (list posts) page only - after page content but before
+any forum display. Content appears above the admin bar and login strip.
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_pre_post]
+
+<b>sf_hook_pre_post($topicid, $postid)</b>
+<br /><br />
+Inserts content at the top of each post – immediately prior to the post content.
+The TOPIC ID and the POST ID are passed into the hook as parameters.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_post_post]
+
+<b>sf_hook_post_post($topicid, $postid)</b>
+<br /><br />
+Inserts content at the bottom of each post – immediately after the users signature (if used).
+The TOPIC ID and the POST ID are passed into the hook as parameters.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_first_post]
+
+<b>sf_hook_first_post($forumid, $topicid)</b>
+<br /><br />
+Inserts content at the bottom of a topics first post – immediately after the users signature (if used).
+The FORUM ID and the TOPIC ID are passed into the hook.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_last_post]
+
+<b>sf_hook_last_post($forumid, $topicid)</b>
+<br /><br />
+Inserts content at the bottom of a topics last post – immediately after the users signature (if used).
+The FORUM ID and the TOPIC ID are passed into the hook.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_other_posts]
+
+<b>sf_hook_other_posts($forumid, $topicid)</b>
+<br /><br />
+Inserts content at the bottom of all posts in a topic except the first and last posts immediately after the
+users signature (if used). The FORUM ID and the TOPIC ID are passed into the hook.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_pre_profile]
+
+<b>sf_hook_pre_profile()</b>
+<br /><br />
+Inserts content immediately prior to the profile. This will display on the profile view
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_profile]
+
+<b>sf_hook_post_profile()</b>
+<br /><br />
+Inserts content immediately after the profile, but prior to the buttons at the bottom of the profile. This will display on the profile view
+Content must be returned from this hook. Do not use 'echo'.
+No parameters are passed into this hook.
+[end]
+
+[sf_hook_post_feedflare]
+
+<b>sf_hook_post_feedflare($permalink)</b>
+<br /><br />
+Content will be displayed below the <b>sf_post_post_hook</b>. The individual post's
+permalink is passed in as a parameter.
+Content must be returned from this hook. Do not use 'echo'.
+[end]
+
+[sf_hook_pre_post_save]
+
+<b>sf_hook_pre_post_save($content)</b>
+<br /><br />
+This hook is fired just prior to the post being saved. You can use this to test the content
+of the post and refuse it by returning a false. To allow the post to be saved - return a true (the default)
+[end]
+
+[sf_hook_post_save]
+
+<b>sf_hook_post_save($newpost, $action)</b>
+<br /><br />
+This hook is fired upon the saving of a new post. The various data that makes up the new post (newpost array)is passed in as well as the action ('topic' or 'post' creation).  The elements of the newpost array are:  forumid, forumslug, topicid, topicslug, postid, submsg, postpin, topicsub, statvalue, posttimestamp, poststatus, postcontent, guestname, guestemail, postername, posteremail, userid, db, and url.
+NOTE: This hook accepts no return content - it can create no display components.
+[end]
+
+[sf_hook_topic_delete]
+
+<b>sf_hook_topic_delete($topicid, $forumid)</b>
+<br /><br />
+This hook is fired upon the deletion of a topic.  The id of the topic that was deleted is passed in as well as the fourmid the topic belonged to.  This hook is fired before the posts that belong to the topic are deleted. Its also worth noting that this hook is NOT fired for topics when a Group or Forum is deleted. NOTE: This hook accepts no return content - it can create no display components.
+[end]
+
+[sf_hook_post_delete]
+
+<b>sf_hook_post_delete($postid, $topicid, $forumid)</b>
+<br /><br />
+This hook is fired upon the deletion of a post.  The id of the post just deleted, the topic id the post belongs to and the forum id the topic belongs to are passed in.  Its also worth noting that this hook is NOT fired for posts when a Group, Forum or Topic is deleted. NOTE: This hook accepts no return content - it can create no display components.
+[end]
+
+[sf_hook_profile_save]
+
+<b>sf_hook_profile_save($userid)</b>
+<br /><br />
+This hook is fired after a user profile has been updated.  The ID of the user profile that was just updated is passed as an argument.
+NOTE: This hook accepts no return content - it can create no display components.
+[end]

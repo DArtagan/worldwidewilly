@@ -1,0 +1,24 @@
+--- Manage Database ---
+$LastChangedDate: 2009-01-01 03:25:57 +0000 (Thu, 01 Jan 2009) $
+$Rev: 1093 $
+
+[select-topic-filter-date]
+
+<strong>Step 1: Select Topic Filter Date</strong><br /><br />
+Use the calendar control icon to select a date up to which you wish to review old topics that may now be redundant and which can
+safely be deleted from your forums. If you do not change this date, the current date will be used.
+[end]
+
+[select-group-forum-to-prune]
+
+<strong>Step 2: Select Forums To Review</strong><br /><br />
+From this list, use the checkboxes to select the forums whose topics you wish to review. By default, all are checked. <br /><br />
+When you have entered the date and made you forum selections, click on the <strong>Filter Topics</strong> button at the bottom.
+[end]
+
+[select-topics-to-prune]
+
+<strong>Step 3: Select Topics to Prune</strong><br /><br />
+Select the topics you wish to remove and click on the  <strong>Prune Topics</strong> button.<br /><br />
+Please remember, once removed these topics and all of their posts are deleted. They can not be re-instated.
+[end]

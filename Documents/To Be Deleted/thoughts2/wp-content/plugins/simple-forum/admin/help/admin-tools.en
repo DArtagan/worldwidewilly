@@ -1,0 +1,53 @@
+Simple:Press Forum
+Admin Tools Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[Turning_the_Tools_On]
+
+Access the 'Forum > Manage Admins' screen and click on the 'Globl Admin Options' tab in order to set the option to Display Admin Tool Icons.
+Check the box and save the options.
+<br /><br />
+With the Admin Tool Icons turned on, beside each topic entry and post entry an icon will be placed
+that will open the toolset when clicked on. The icon image will depend on the icon set you are using
+with your forum.
+[end]
+
+[Using_the_Topic_Tools]
+
+The following tools are available within each topic entry:
+<ul>
+<li><b>Lock Topic</b>: This tool will toggle a lock on and off for the selected topic. Locking a topic
+will prevent any member of guest being able to make new posts to that topic.
+The Admin will always be able to create new posts however</li>
+<li><b>Pin Topic</b>: Also known on some forum systems as 'sticky'.
+Toggling on the Pin will ensure that the selected topic
+always remains at the top of the forums topic index.</li>
+<li><b>Edit Topic Title</b>: Allows for editing of the topic title and, if necessary, the topic slug. The slug should <b>ONLY</b>
+ever be changed if the topic has a problem displaying correctly due to odd characters in the slug.</li>
+<li><b>Change Topic Status</b>: Allows the admin to change the status of a topic if topic status sets are being used.</li>
+<li><b>Change Sort Order</b>: The default sort order for all topics is set in the Forum > Manage Options > Topics tab.
+This admin tool can be used to reverse the sort order of posts for the selected topic only.</li>
+<li><b>Delete Topic</b>: Deleting a topic will remove it and all of it's posts from the system.
+This action can not be reversed.</li>
+<li><b>Move Topic</b>: Allows the user to move this topic to a different forum. When clicked, the 'move topic' form will be displayed.</li>
+<li><b>Break Link</b>: This tool only appears if the forum topic is linked to a blog post and it allows for that linkage to be broken.
+No content is removed - but the link relationship between the blog post and forum topic is destroyed.</li>
+<li><b>View Topic Properties</b>: Information and ID's of the Topic</li>
+</ul>
+[end]
+
+[Using_the_Post_Tools]
+
+The following tools are available within each post entry:
+<ul>
+<li><b>Approve Post</b>: If a post is awaiting moderation, clicking on the 'approve' icon will approve it.</li>
+<li><b>Show Users Email</b>: Quickly find the email of the selected posts author. A users email address is never shown anywhere else.</li>
+<li><b>Pin Post</b>: Alson known on some forums as 'sticky'. Pinning a post wil lensure it remains at the top of the
+post thread.</li>
+<li><b>Edit Post</b>: All posts can be edited by the forum Admin ata ny time using this tool.</li>
+<li><b>Move Post</b>: Move this post to a new Topic.</li>
+<li><b>Delete Post</b>: Deletes the selected post from the topic.</li>
+<li><b>View Post Properties</b>: Information  and IDs for this Post</li>
+</ul>
+[end]

@@ -1,0 +1,54 @@
+Simple:Press Forum
+Custom Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[License_for_Use]
+<b>SIMPLE:PRESS FORUM - WordPress Plugin</b><br />
+All Versions<br /><br />
+
+Copyright 2006/2009<br />
+Andy Staines<br />
+http://www.yellowswordfish.com<br />and<br />
+Steve Klasen<br />
+http://cruisetalk.org/<br /><br />
+
+<b>The Official Bit: </b><br /><br />
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.<br /><br />
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br /><br />
+For a copy of the GNU General Public License, write to the Free Software Foundation, Inc., 59 Temple Place,
+Suite 330, Boston, MA  02111-1307  USA
+<br /><br />
+<b>The Semi-Official Bit:</b><br /><br />
+
+As far as we are concerned, anyone can do anything they like with this WordPress plugin software program. All we require is that:
+<ol>
+<li>This file, 'License.rtf', is always distributed unchanged</li>
+<li>The plugin header in the code file 'sf-control.php' also remains unchanged</li>
+<li>The Version Strip, Copyright and Acknowledgement pop-up at the very bottom of each forum  page is NOT removed.
+This plugin is provided free for anyone to use. We have spent an enormous amount of my time and, indeed, money, creating,
+maintaining, and continuing development of this software. The least that you, the user, could do to recognise that, is to
+leave this copyright strip in place which at the very least enables a link back to our sites. Thank you.</li>
+</ol><br />
+Other than  those three stated requirements, feel free to use this plugin and change the code of this plugin as you see fit.
+We have done my very best to ensure this software is safe to use and as secure as possible. However we take no responsibility
+for any problems that may occur or any data that may be lost due to unforeseen vulnerabilities. We will, however, make
+every attempt to fix bugs and supply updates and/or patches where required.<br /><br />
+Anyone encountering serious security problems should, in the first instance, contact us by email and not post to the support forum.
+Problems of this nature should not be  made public until a fix is available.<br /><br />
+Other than that, we hope this plugin meets a need and is able to enhance your WordPress website in a positive way.
+<br /><br />
+<b>Andy Staines</b> and <b>Steve Klasen</b><br />
+2006-2009
+[end]
+
+[Using_HighSlide]
+HighSlide (these popup boxes) - you're looking at one now!) are the copyright of Torstein H&oslash;nsi <a href="http://vikjavev.no/highslide/" >Vikjavev.no</a>
+and is free to use in a non-commercial environment and free to distribute in a plugin such as Simple:Press Forum.<br /><br />
+If you plan in any way to use this plugin on a commercial website, a small license fee should be paid to the author. Details can be found on the site lnked to above.
+[end]
+
+

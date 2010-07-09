@@ -1,0 +1,63 @@
+/*
+Theme Name: WorldWideWilly
+Theme URI: http://www.worldwidewilly.net
+Description: Based on the K2 theme, customized to match the rest of the website
+Author: William H. Weiskopf, IV
+Author URI: http://www.worldwidewilly.net
+Template: k2
+*/
+
+#page {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-left: 10px solid #000000;
+	border-right: 10px solid #000000;
+	border-bottom: 10px solid #000000;
+	background: #FFFFFF;
+	background-image: url("/images/The W Background.png");
+	background-repeat: no-repeat;
+	background-attachement: relative;
+	background-position: bottom right;
+	top: -120px;}
+	
+h1 {
+	padding: 0px;
+	margin: 0px;}
+	
+#content {
+	clear: none;}
+	
+
+/*This line of thought:*/	
+.content {
+	width: 70%;}
+/**/
+	
+#headerimg .description {
+	text-align: left;}
+	
+#sidebar {
+	font: .75em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	float: right}
+	
+.post {
+	margin-bottom: 40px;
+	text-align: justify;}
+	
+#sidebar #searchform #s {
+	width: 100%;
+	padding: 2px;}
+	
+#sidebar {
+	margin-top: 20px;
+	margin-left: 3%;
+	padding-top: 5px;
+	padding-left: 1%;
+	padding-right: 3%;
+	border-left: 1px solid #AAAAAA;
+	float: right;
+	width: 15%}
+	
+ul.menu {
+	visibility: hidden;}

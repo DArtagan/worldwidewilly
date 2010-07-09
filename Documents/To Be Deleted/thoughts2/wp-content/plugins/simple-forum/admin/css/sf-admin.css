@@ -1,0 +1,580 @@
+/*
+Simple:Press Forum Admin CSS
+$LastChangedDate: 2009-01-15 13:03:20 +0000 (Thu, 15 Jan 2009) $
+$Rev: 1209 $
+*/
+
+/* ADMIN OUTER CONTAINER =======================*/
+
+.wrap.sfatag {
+	font-family: Tahoma, Verdana, Helvetica;
+	display: block;
+	border: 1px solid #BFD0FF;
+	padding: 0 4px; }
+
+/* MAIN SPF SURROUNDING TABLE CONTAINER ========*/
+
+.sfmaincontainer {
+	width: 100%;
+	margin-bottom: 10px; }
+
+.sfformcontainer {
+	max-width: 100%; }
+
+.sfmaincontainer div,
+.sfmaincontainer span,
+.sfmaincontainer fieldset,
+.sfmaincontainer form,
+.sfmaincontainer label,
+.sfmaincontainer legend {
+	vertical-align: top !important;}
+
+.sfmaincontainer table,
+.sfmaincontainer tbody,
+.sfmaincontainer tfoot,
+.sfmaincontainer thead,
+.sfmaincontainer tr,
+.sfmaincontainer th,
+.sfmaincontainer td {
+	vertical-align: top}
+
+.sfmaincontainer ul {
+	margin-top: 10px; }
+
+.sfmaincontainer ul li {
+	margin-left: 15px; }
+
+.sfmaincontainer fieldset {
+	padding-top: 10px; }
+
+/* GLOBALS =====================================*/
+
+a:focus, a:hover, a:link, a:active {
+	outline-style: none; }
+
+a {
+	text-decoration: none !important;
+	border-bottom: none; }
+
+.inline_edit {
+	display:none;
+	padding: 35px; }
+
+.sfinline-form {
+	background-color: #FFFFFF; }
+
+.clearboth {
+	clear: both;
+	height: 1px;
+	overflow: hidden; }
+
+.clearleft {
+	clear: left;
+	height: 10px; }
+
+h5 {
+	font-family: Tahoma, Verdana, Helvetica;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 3px 0 0 0; }
+
+/* 32px Icons ==================================*/
+
+.mainicon { width: 34px; height: 34px; margin: 12px 5px 0 0; float: left;}
+.icon-forums { background: url(icon32bar.png) no-repeat 0px 0px; }
+.icon-options { background: url(icon32bar.png) no-repeat -34px 0px; }
+.icon-components { background: url(icon32bar.png) no-repeat -68px 0px; }
+.icon-usergroups { background: url(icon32bar.png) no-repeat -102px 0px; }
+.icon-permissions { background: url(icon32bar.png) no-repeat -136px 0px; }
+.icon-users { background: url(icon32bar.png) no-repeat -170px 0px; }
+.icon-admins { background: url(icon32bar.png) no-repeat -204px 0px; }
+.icon-database { background: url(icon32bar.png) no-repeat -238px 0px; }
+.icon-help { background: url(icon32bar.png) no-repeat -272px 0px; }
+
+
+/* BUTTON MENUS ================================*/
+
+.sfamenutable {
+	float: left;
+	height: 57px;
+	border-collapse: separate;
+	border: 0;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding-right: 40px; }
+
+.sfmenucurrent {
+	text-align: center;
+	padding-top: 0px;
+	margin-top: 1px; }
+
+.sfamenuitem {
+	padding: 0px 6px 6px 6px;
+	vertical-align: bottom;
+	background-repeat: no-repeat;
+	border-left: 1px solid #A9A4C4;
+	border-right: 1px solid #A9A4C4; }
+
+td.sfamenuitem {
+		vertical-align: bottom !important;
+}
+
+.sfabutton small {
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 10px !important;
+	font-weight: bold;
+	color: #27537A;
+	text-align: center;
+	padding: 20pt 0 0 0;
+	line-height: 1em; }
+
+.sfabgoptions 		{ background: url(bg-options.gif) top center }
+.sfabgforum   		{ background: url(bg-forum.gif) top center}
+.sfabgcomps   		{ background: url(bg-comps.gif) top center}
+.sfabgusergroups   	{ min-width: 65px; background: url(bg-usergroups.gif) top center}
+.sfabgperms   		{ background: url(bg-perms.gif) top center}
+.sfabgdbase   		{ background: url(bg-dbase.gif) top center}
+.sfabgusers  		{ background: url(bg-users.gif) top center}
+.sfabgadmins  		{ background: url(bg-admins.gif) top center}
+.sfabggoto    		{ background: url(bg-goto.gif) top center}
+.sfabghelp    		{ background: url(bg-help.gif) top center}
+.sfabgabout   		{ background: url(bg-about.gif) top center}
+.sfabgsupport 		{ background: url(bg-support.gif) top center}
+.sfabgpaypal  		{ background: url(bg-paypal.gif) top center}
+
+.sfamenusep {
+	background: url(menusep.gif) center center no-repeat;
+	border: 0; }
+
+.sfaactiontable{
+	float: left;
+	height: 46px;
+	border-collapse: separate;
+	border: 0;
+	margin-bottom: 2px; }
+
+.sfahelptable {
+	float: right;
+	height: 42px;
+	border-collapse: separate;
+	border: 0;
+	padding-left: 50px;
+	margin-bottom: 10px; }
+
+td.sfamenuitem a.sfasmallbutton small {
+	vertical-align: bottom !important;
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 10px !important;
+	font-weight: bold;
+	color: #27537A;
+	text-align: right;
+	padding: 10pt 0 10pt 20px;
+	line-height: 1em;
+	margin: 0 0 0 25px; }
+
+.sfabgnewgroup { background: url(bg-creategroup.gif) top left }
+.sfabgnewforum { background: url(bg-createforum.gif) top left }
+.sfabgaddperms { background: url(bg-addpermissions.gif) top left }
+.sfabgremperms { background: url(bg-removepermissions.gif) top left }
+.sfabgnewuserg { background: url(bg-createusergroup.gif) top left }
+.sfabgnewperms { background: url(bg-createpermissions.gif) top left }
+.sfabgoverview { background: url(bg-overview.gif) top left }
+
+.sfabuttontable{
+	height: 34px;
+	border-collapse: separate;
+	border: 0; }
+
+.sfabuttonitem, .sfabuttonitem td {
+	vertical-align: bottom !important;
+	padding: 0px 6px 6px 6px !important;
+	vertical-align: bottom !important;
+	background-repeat: no-repeat !important;
+	border-left: 1px solid #A9A4C4 !important;
+	border-right: 1px solid #A9A4C4 !important;
+	border-top: none !important;
+	border-bottom: none !important; }
+
+td.sfabuttonitem a.sfasmallbutton {
+	vertical-align: bottom !important;
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 10px !important;
+	font-weight: bold !important;
+	color: #27537A;
+	text-align: right;
+	padding: 15px 0 3px 20px;
+	line-height: 1em;
+	margin: 0; }
+
+td.sfabuttonitem a.sfasmallbutton div {
+	vertical-align: bottom !important;
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 10px !important;
+	color: #27537A;
+	text-align: right;
+	padding: 0 0 0 20px;
+	line-height: 1em;
+	margin: -4px 0 0 0; }
+
+td.sfabuttonitem a.sfasmallbutton div a {
+	vertical-align: bottom !important;
+	color: #000000; }
+
+.sfabgcancel 		{background: url(bg-cancel.gif) no-repeat top left}
+.sfabgcheckall 		{background: url(bg-checkall.gif) no-repeat top left}
+.sfabguncheckall 	{background: url(bg-uncheckall.gif) no-repeat top left}
+.sfabgedit 			{background: url(bg-edit.gif) no-repeat top left}
+.sfabgdelete 		{background: url(bg-delete.gif) no-repeat top left}
+.sfabgupdate 		{background: url(bg-update.gif) no-repeat top left}
+.sfabgconfirm 		{background: url(bg-confirm.gif) no-repeat top left}
+.sfabgaddusergroup	{background: url(bg-addusergroup.gif) no-repeat top left}
+.sfabgaddmember		{background: url(bg-addmember.gif) no-repeat top left}
+.sfabgdelmember		{background: url(bg-delmember.gif) no-repeat top left}
+.sfabgshowmembers	{background: url(bg-showmembers.gif) no-repeat top left}
+.sfabghidemembers	{background: url(bg-hidemembers.gif) no-repeat top left}
+.sfabghidemembers	{background: url(bg-hidemembers.gif) no-repeat top left}
+.sfabgaddpermission	{background: url(bg-addpermission.gif) no-repeat top left}
+.sfabgpermissions	{background: url(bg-permissions.gif) no-repeat top left}
+.sfabgfiltertopics	{background: url(bg-filtertopics.gif) no-repeat top left}
+.sfabgprunetopics	{background: url(bg-prunetopics.gif) no-repeat top left}
+.sfabgcheckupdate	{background: url(bg-checkupdate.gif) no-repeat top left}
+.sfabgpermalink		{background: url(bg-permalink.gif) no-repeat top left}
+.sfabgshowsubs		{background: url(bg-showsubs.gif) no-repeat top left}
+.sfabgaddadmin		{background: url(bg-addadmin.gif) no-repeat top left}
+.sfabgspamusers		{background: url(bg-spamusers.gif) no-repeat top left}
+
+/* TABS ========================================*/
+
+#sfoptionstabs { display: none; }
+#sfcomponentstabs { display: none; }
+#sfuserstabs { display: none; }
+#sfadminstabs { display: none; }
+
+.ui-tabs-hide { display: none; }
+div.ui-tabs-panel { margin: 0; padding: .5em .9em; height: auto; overflow: auto; border: 1px solid #3b446e !important; -moz-border-radius: 4px; -khtml-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.ui-tabs-nav, .ui-tabs-panel { font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif; font-size: 12px; }
+.ui-tabs-nav { list-style: none; margin: 0; padding: 0 0 0 4px; }
+.ui-tabs-nav:after { display: block; clear: both; content: " "; }
+.ui-tabs-nav li { float: left; margin: 0 0 0 1px !important; min-width: 34px; }
+.ui-tabs-nav a, .ui-tabs-nav a span { display: block; padding: 0 10px; background: url(tab.png) no-repeat; }
+.ui-tabs-nav a { margin: 1px 0 0; padding-left: 0; color: #27537a; font-weight: bold; line-height: 1.2; text-align: center; text-decoration: none; white-space: nowrap; outline: 0; }
+.ui-tabs-nav .ui-tabs-selected a { position: relative; top: 1px; margin-top: 0; color: #000; }
+.ui-tabs-nav a span { width: 34px; min-width: 34px; height: 18px; min-height: 18px; padding-top: 6px; padding-right: 0; }
+*>.ui-tabs-nav a span { width: auto; height: auto; }
+.ui-tabs-nav .ui-tabs-selected a span { padding-bottom: 1px; }
+.ui-tabs-nav .ui-tabs-selected a, .ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active { background-position: 100% -150px; }
+.ui-tabs-nav a, .ui-tabs-nav .ui-tabs-disabled a:hover, .ui-tabs-nav .ui-tabs-disabled a:focus, .ui-tabs-nav .ui-tabs-disabled a:active { background-position: 100% -100px; }
+.ui-tabs-nav .ui-tabs-selected a span, .ui-tabs-nav a:hover span, .ui-tabs-nav a:focus span, .ui-tabs-nav a:active span { background-position: 0 -50px; }
+.ui-tabs-nav a span, .ui-tabs-nav .ui-tabs-disabled a:hover span, .ui-tabs-nav .ui-tabs-disabled a:focus span, .ui-tabs-nav .ui-tabs-disabled a:active span { background-position: 0 0; }
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { cursor: text; }
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active, .ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { cursor: pointer; }
+.ui-tabs-disabled { opacity: .4; filter: alpha(opacity=40); }
+.ui-tabs-panel { border: #000000; padding: 1em 8px; background: #fff; }
+.ui-tabs-loading em { padding: 0 0 0 20px; background: url(loading.gif) no-repeat 0 50%; }
+* html .ui-tabs-nav { display: inline-block; }
+*:first-child+html .ui-tabs-nav { display: inline-block; }
+
+/* CHECKBOX/RADIO BUTTONS ======================*/
+
+label.checkbox span.holder { height: 61px; background: transparent url(checkbox.gif) 0 -3px no-repeat; }
+label.radio span.holder { height: 61px; background: transparent url(radio.gif) 0 -3px no-repeat; }
+label.checked span.holder, label.checked span.holder { top: -42px !important; }
+label.list { float: left; clear: left; background: transparent; width:100%}
+label.inline { float: left; margin: 0 10px 0 0; }
+input.hiddenCheckbox { position: absolute; left: -10000px; }
+label.prettyCheckbox span.holderWrap { display: block; float: left; position: relative; margin-right: 15px; overflow: hidden; }
+label.prettyCheckbox span.holder { display: block; position: absolute; top: 0; left: 0; }
+
+/* POPUP/ONLINE HELP============================*/
+
+.sfhelptext { margin: 0; padding: 0; font-family: Verdana, Tahoma, Helvetica, Arial, SanSerif; }
+.sfhelptext fieldset { margin: 0 8px; padding: 0 15px 10px 15px; border: 1px solid #dddddd; background: #FFFFCC; -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.sfhelptext p { font-size: 13px; line-height: 1.3em; padding: 0 0 6px 0; }
+.sfhelptext ul, .sfhelptext ol { font-size: 13px; padding: 0; margin: 3px 0 0 25px; }
+.sfhelptext ul {  list-style-type: disc; }
+.sfhelptext ol {  list-style-type: decimal; }
+.sfhelptext ul li, .sfhelptext ol li { font-size: 13px; padding: 0; margin: 0; }
+.sfhelptext table { border-collapse: separate; border-spacing: 0; }
+.sfhelptext table tr { font-size: 9px; }
+.sfhelptext table td { border: 1px solid #999999; margin: 0; background: #FFFFEA; }
+.sfhelptext td { font-size: 12px; padding: 5px; }
+.sfhelptext .sfhelptextlogo { margin: 10px auto 0 auto; text-align: center; }
+.sfhelptext .sfhelptag { margin: 0 8px 4px 8px; padding: 5px 15px 5px 15px; border: 1px solid #dddddd; background: #3399CC; color: #FFFFFF; -moz-border-radius: 4px; -khtml-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.sfhelptext .sfhelptag p { font-weight: bold; font-size: 14px; margin: 0; padding: 0; }
+
+.sfhelptable, .sfhelptable td { font-family: Tahoma, Verdana, Helvetica, SanSerif !important; font-size: 12px; font-weight: bold; color: #000000; margin: 2px !important; padding: 3px 5px !important; background-color: #FFFFFF !important; text-decoration: none !important; }
+.sfhelptable p, .sfhelptable ul { color: #000000 !important; font-size: 12px !important; line-height: 1.2em; }
+.sfhelptable li { line-height: 1em; }
+.sfhelptable ul li ul { margin: 10px 0 10px 0; }
+.sfhelpfieldset { font-size: 12px; font-weight: bold; color: #000000; border: 1px solid #5364AE; width: auto; margin: 6px 0 6px 0; padding: 0 10px 15px 10px; background-color: #FFFFFF; -moz-border-radius: 4px; -khtml-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+
+/* CONTROLS ====================================*/
+
+.sfacontrol, .wrap a.sfacontrol, input.sfacontrol, a.sfacontrol {
+	border: 1px solid #3b446e !important;
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 11px !important;
+	margin: 2px !important;
+	padding: 3px 5px !important;
+	background-color: #eeeeee !important;
+	color: #444444 !important;
+	text-decoration: none !important;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+.sfacontrol:hover {
+	color: #D54E21; }
+
+td input.sfpostcontrol {
+	vertical-align: bottom !important;
+	border: 1px solid #3b446e !important;
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 11px !important;
+	margin: 2px !important;
+	padding: 3px 5px !important;
+	background-color: #eeeeee !important;
+	text-decoration: none !important;
+	width: 90%;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+#wpcontent select {
+	height: auto !important; }
+
+.sffieldset {
+	font-family: Tahoma, Verdana, SanSerif !important;
+	font-size: 13px;
+	font-weight: normal;
+	color: #5364AE;
+	border: 1px solid #3b446e;
+	width: auto;
+	margin: 10px 10px 0px 10px;
+	padding: 10px 10px 15px 10px;
+	background-color: #ffffff;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+.sffieldset legend {
+	font-size: 12px;
+	color: black; }
+
+.sffieldset p, .sffieldset ul {
+	margin: 0;
+	padding: 8px 0 6px 15px;
+	background: transparent;
+	font-family: Tahoma, Verdana, Helvetica, Arial, SanSerif;
+	font-size: 13px; }
+
+.sffieldset ul li {
+	margin: 0 0 0 20px;
+	padding: 0px 0 0 0; }
+
+textarea.sftextarea {
+	color: #000000 !important;
+	border: 1px solid #3b446e !important;
+	font-family: Tahoma, Verdana, sans-serif !important;
+	font-size: 100% !important;
+	margin: 2px !important;
+	padding: 3px 5px !important;
+	width: 90%;
+	background-color: #EEEEEE !important;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+/* FORM TABLE (WP) =============================*/
+
+.form-table {
+	border-collapse: collapse;
+	margin-top: .5em;
+	width: 100%; }
+
+.form-table th {
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: left;
+	padding: 5px 10px 5px 3px;
+	background-color: #464646;
+	color: #d7d7d7;
+	border-bottom: 8px solid #FFFFFF; }
+
+.form-table td {
+	margin-bottom: 4px;
+	padding: 3px;
+	border-bottom: 1px solid #ddd !important;
+	line-height: 12px;
+	min-height: 33px; }
+
+.form-table td.sflabel,
+.form-table td p {
+	margin: 0;
+	padding: 8px 5px 6px 15px;
+	background: transparent;
+	font-family: Tahoma, Verdana, Helvetica, Arial, SanSerif;
+	font-size: 13px;
+	vertical-align: middle !important;}
+
+/* TABLE - SFMAIN and SFSUB ====================*/
+
+.sfmaintable, .sfsubtable, .sfsubsubtable {
+	border-collapse: collapse;
+	width: 100%;
+	color: #000000; }
+
+.sfmaintable {
+	background-color: #EAF3FA;
+	border-bottom: 6px solid #FFFFFF; }
+
+.sfsubtable, .sfsubsubtable {
+	background-color: #f9f9f9; }
+
+.sfmaintable th, .sfsubtable th, .sfsubsubtable th {
+	background: #464646;
+	color: #d7d7d7;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 5px 3px;
+	border: none; }
+
+.sfsubtable tr {
+	border: 1px solid #CCCCCC;
+	margin: 0; }
+
+.sfsubsubtable tr {
+	border-style: none;
+	margin: 4px; }
+
+.sfmaintable td, .sfsubtable td, .sfsubsubtable td {
+/*	vertical-align: bottom !important;*/
+	font-family: Tahoma, Verdana, Helvetica, Arial, SanSerif;
+	font-size: 12px;
+	padding: 2px 5px; }
+
+/* USER GROUP - MEMBER LIST ====================*/
+
+ul.memberlist {
+	font-family: Tahoma, Verdana, Helvetica, Arial, SanSerif;
+    width: 505px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0; }
+
+ul.memberlist li {
+    width:100px;
+    margin:0;
+    padding:0;
+    float:left;
+    font-size: 10px; }
+
+/* ODDS AND ENDS ===============================*/
+
+.sfoptionerror {
+	border: 1px solid #000000;
+	background-color: red !important;
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 10px; }
+
+.sfempty {
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+	background-color: #FFFFAA;
+	margin-bottom: 18px;}
+
+/* TINYMCE TOOLBAR TOOL ========================*/
+
+#sftbarstan, #sftbarplug, #sftbarall {
+	list-style: none;
+	padding: 0;
+	margin: 0; }
+
+#sftbarstan li, #sftbarplug li, #sftbarall li {
+	display: inline;
+	margin: 0;
+	padding: 0 1px; }
+
+#sftbarstan img, #sftbarplug img, #sftbarall img {
+	border: 1px solid #666666; }
+
+#sftbarstan .handle, #sftbarplug .handle {
+	margin: 0;
+	cursor: move; }
+
+#sftbarall img:hover {
+	border: 1px solid red; }
+
+#stan_buttons { padding: 5px; border: 1px solid #ccc; }
+#plug_buttons { padding: 5px; border: 1px solid #ccc; }
+#delbuttons  { padding: 5px; border: 1px solid #ccc; }
+
+#sfAbout {
+	background: #FFFFFF;
+	color: #000000;
+	text-align: center;
+	font-family: Tahoma, Helvetica, Verdana, san-serif;
+	font-weight: normal;
+	font-size: 10px;
+	margin: 8px; }
+
+#sfAbout p {
+	margin: 0;
+	padding: 4px 4px 0 4px; }
+
+#sfAbout a {
+	color: #5364AE;
+	font-weight: bold; }
+
+#sfAbout sup {
+	font-size: 7px; }
+
+.sfhelplink {
+	float: right;
+	height: 15px;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.sfhelpflag {
+	vertical-align: middle;
+	color: #000000 !important;
+	font-family: Verdana, sans-serif !important;
+	font-size: 9px !important;
+	font-weight: normal !important;
+	padding: 0 !important;
+}
+
+.sfhelpleft {
+	float: right;
+	background: url(helpleft.png) no-repeat;
+	width: 6px;
+	height: 15px;
+	margin: 0;
+}
+
+.sfhelpright {
+	float: right;
+	background: url(helpright.png) no-repeat;
+	width: 6px;
+	height: 15px;
+	margin: 0;
+}
+
+.sfhelpmiddle {
+	float: right;
+	background: url(helpmiddle.png) repeat-x;
+	height: 15px;
+	width: auto;
+	margin: 0;
+}

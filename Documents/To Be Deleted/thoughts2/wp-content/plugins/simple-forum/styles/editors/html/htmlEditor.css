@@ -1,0 +1,37 @@
+/*
+Simple:Press Forum
+The old Quicktags Edior - HTML Styles
+$LastChangedDate: 2009-01-01 03:25:57 +0000 (Thu, 01 Jan 2009) $
+$Rev: 1093 $
+*/
+
+.quicktags .editor_toolbar {
+}
+
+.quicktags {
+	background-color: #ADC1FE !important;
+	width: 80%;
+	padding-left: 10px;
+}
+
+.quicktags #ed_strong {
+	margin-left: 10px;
+}
+
+.quicktags .editor_button {
+	font-family: Verdana, sans-serif;
+	font-size: 90%;
+	color: #000000;
+	background-color:#f7f7f7;
+	border: 1px solid #999999;
+	margin: 5px 0 5px 0;
+	padding: 3px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.quicktags .editor_button:hover {
+	background-color: #E2E2E2;
+}

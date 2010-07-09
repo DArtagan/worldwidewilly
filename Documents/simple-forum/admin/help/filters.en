@@ -1,0 +1,23 @@
+Simple:Press Forum
+Filters Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[sf_save_post_content]
+
+This filter can be used to operate on the post content prior to it being saved into the database.
+Any changes made to content in this way becomes a permanent change. To use, define as you would a standard
+WordPress filter:<br /><br />
+&nbsp;&nbsp;<b>add_filter('sf_save_post_content', 'function_name');</b><br /><br />
+and create the function accordingly. The content is passed into the filter
+as a parameter.
+[end]
+
+[sf_show_post_content]
+This filter can be used to operate on the post content prior to it being displayed as a forum post.
+Any changes made to content in this way is a temporary change used at display time only.
+To use, define as you would a standard WordPress filter:<br /><br />
+&nbsp;&nbsp;<b>add_filter('sf_show_post_content', 'function_name');</b><br /><br />
+and create the function accordingly. The content is passed into the filter
+as a parameter.
+[end]

@@ -1,0 +1,25 @@
+Simple:Press Forum
+Pluggable Functions Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[Pluggable_Functions]
+
+Most of the page rendering code within Simple:Press Forum is constructed of 'pluggable functions'. This makes them easy to replace
+without editing the plugin code and allows for major customisation to the look and feel that goes beyond CSS and program hooks.<br /><br />
+To use, find the file sf-pluggable.txt (/simlep-forum/forum.) and rename it to sf-pluggabe.php prior to writing code.
+To replace a function simply copy the current function and paste it into the file 'sf-pluggable.php' which resides in the 'forum' folder. Do NOT
+remove the original function.<br />
+On your copy, remove the 'if(function_exists()' call on the first line and the 'endif' line at the end. Then make whatever chenges you wish.
+The next time the forum is opened it will use the copy and not the original.<br /><br />
+The files containing the pluggable functions are:<br />
+<ul>
+<li>sf-groupcomponents.php</li>
+<li>sf-forumcomponents.php</li>
+<li>sf-topiccomponents.php</li>
+<li>sf-pagecomponents.php</li>
+</ul>
+<br />
+These are self explantory and refer to each of the three major views - the Group/Forums list, the Forum/Topics list and the Topic/Posts list.
+The file sf-pagecomponents.php contains most of the rendering code that is common on all three of the above views.
+[end]

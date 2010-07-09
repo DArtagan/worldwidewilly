@@ -1,0 +1,14 @@
+autoplay:false
+key:false
+autobuffer:false
+popupbox:true
+tgt:backgroundcolor
+backgroundColor:#1b1b1d
+canvas:#ffffff
+sliderColor:#2e2e2e
+buttonColor:#454545
+buttonOverColor:#ffffff
+durationColor:#ffffff
+timeColor:#ededed
+progressColor:#707070
+bufferColor:#4d4d4d

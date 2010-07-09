@@ -1,0 +1,403 @@
+--- Manage Options ---
+$LastChangedDate: 2009-05-17 10:03:04 +0100 (Sun, 17 May 2009) $
+$Rev: 1867 $
+
+[forum-page-details]
+
+<strong>Forum Page Slug</strong><br /><br />
+When Simple:Press Forum was installed, it attempted to create a new WordPress '<strong>page</strong>'.  If successful, the <strong>Slug</strong> of the page will be recorded in the options.  If for any reason this field is empty, check if the page was created and if not, create a new blank page, note the Slug, and complete this field.  This is how Simple:Press Forum knows which 'page' to use for it's display.<br /><br />
+<strong>Page Title</strong><br />
+By default, Simple:Press Forum will display the page title as it is set in the WordPress 'page' record which you can change any time by visiting 'Manage > Pages', selecting the forum page and loading it up for editing. However, the title can also be changed using these options.<br /><br />
+<strong>Show Forum/Topic in Page Title</strong><br />
+This option will append the name of the currently display forum or topic to the title of the page.<br /><br />
+<strong>Remove Page Title Completely</strong><br />
+As it implies, this option will remove the page title and leave the area blank.<br /><br />
+<strong>Graphic Replacement URL</strong><br />
+It is also possible to display a graphic banner instead of the textual title. By entering the URL of an image file this will be displayed instead. Simple:Press Forum attempts to centre any graphic used but this can be altered in the forum skin you are using where you can also define any other styling.<br /><br />
+<strong>Please Note:</strong><br />
+If an image URL is found in this field, it WILL be used regardless of the setting of the other two options. If it is empty but both alternate options are set, Simple:Press Forum will select to leave the title blank.<br /><br />
+[end]
+
+[auto-update]
+
+<strong>Auto Update</strong><br /><br />
+If you turn on this option, Simple:Press Forum will automatically update the QuickLinks New and Unread Post List,
+the New Posts and Awaiting Moderation Counters on the Admin Bar and the count of unread items in the Inbox.
+If you are not using these items then leave this option unchecked.<br /><br />
+You can set the frequency of the auto-updating (in seconds). The default for a new install is 300 (5 minute intervals).
+It is <b>strongly recommended</b> NOT to set the interval to under 120 seconds and indeed a longer interval is to be
+preferred. Depending on your site hosting and how busy your site is this feature could be considered as resource 'hungry'.
+
+[end]
+
+[lock-down-forum]
+
+<strong>Lock Down Forum</strong><br /><br />
+This option enables the Admin to completely lock the forum - in other words make it read only - although
+they will still be able to make posts and edits.<br /><br />
+This option is useful for maintenance such as when the Admin wishes to 'prune' out old topics, re-arrange their forums
+or, perhaps, change their user group and permission settings.<br /><br />
+Note that there is no need to lock the forum during an upgrade.
+[end]
+
+[users-and-registration]
+
+<strong>Collect and Display Extended Profile</strong><br />
+Simple:Press Forum makes use of the same user 'profile' data already set up in your site. However it optionally adds some 
+extra fields to this data such as location, signature etc., depending upon this setting.<br /><br />
+<strong>Limit Membership Display</strong><br />
+If checked this option will limit the membership list display for a member to only display user groups and its members that 
+the members is actually a member of.  If the option is not set, a member will be able to see member lists and profiles 
+for ALL members of the forum.  Guests will never be able to see any membership list.<br /><br />
+<strong>Disallow Members Not Logged In To Post As Guests</strong><br />
+If a returning member (identified by their cookie) does not log in you can allow them to post as a Guest. Turning on this option 
+stops them from making posts and presents them with the login button instead.
+[end]
+
+[user-permissions]
+
+<strong>User Permissions</strong><br /><br />
+Every user has to be a member of a User Group. Some User Groups are pre-defined but you can create others. This setting controls
+the default User Group that a new member will be assigned to when they first register. This item is required. You also need to define the default
+User Group that Guests will be assigned to.
+[end]
+
+[breadcrumb-home-link]
+
+<strong>Show Breadcrumbs Links</strong><br /><br />
+This option determines whether you display the breadcrumbs link trail in the forum. <br /><br />
+<strong>Breadcrumb 'Home' Link</strong><br /><br />
+If breadcrumbs are enabled, this option determines whether you display a link to a 'Home' page at the start of the forum 'breadcrumb' link trail. 
+You may also define what that link should be if you prefer not to use the default front page of your site.
+[end]
+
+[display-forum-statistics]
+
+<strong>Display Forum Components</strong><br /><br />
+<strong>Display Forum Statistics</strong><br />
+Statistics about the forum - number of posts, members etc., - can be displayed at the bottom of each page.
+However, if preferred you can turn the display off.<br /><br />
+<strong>Display Search Bar</strong><br /><br />
+The Search Bar can also be optionally removed if not wanted. Please note however, that the Search Bar also contains the two 
+'QuickLinks' dropdown lists that give quick access to the most recent posts and to each forum.
+[end]
+
+[quicklinks-dropdowns]
+
+<strong>QuickLinks Dropdowns</strong><br /><br />
+<string>Show 'QuickLinks' dropdowns</strong><br />
+The 'QuickLinks' dropdown lists can be optionally removed from display on the Search Bar. There are two lists. 
+The first shows the most recent topics to receive new posts and the second offers links to all of the defined forums.<br /><br />
+<strong>Number of New Posts to show</strong><br />
+This number determines the number of most recent topics with new posts to make available in the 'QuickLinks' dropdown list.<br />
+Note that the Admin will also see their own new post queue and posts they have not read or posts that require moderation
+will be displayed in their respective colours.
+[end]
+
+[avatars]
+
+<strong>Avatars</strong><br /><br />
+
+<strong>Display Avatars</strong><br />
+This option determines whether avatars are displayed or not. Avatars may be restricted (through user permissions) to the three
+default images supplied with Simple:Press Forum (Admin, Member and Guest). Alternatively you may select to use the WP Blog avatar settings
+which will take precedence over all other options. If not set, you may allow users to upload their own
+images to your server for use. Finally, Gravatars and the Gravatar service can be used.<br /><br />
+<strong>Use WP Avatar Settings</strong><br />
+Use the same settings as set on the WP 'discussion' page. If this is checked it will take precedence over uploading.<br /><br />
+<strong>Enable Avatar Uploading</strong><br />
+Before members can upload Avatars the option must be enabled, or turned on. Once turned on, members will be able to make the uploads 
+if they are in a user group with a permission set assigned that allows it.<br /><br />
+<strong>Use Gravatars by default</strong><br />
+This option will cause the forum to look for a users Gravatar first. if this is not found it will look to see if
+the user has uploaded an image for use (if allowed). Finally the default pre-supplied avatars will be used.<br /><br />
+<strong>Maximum Avatar Width/Height (pixels)</strong><br />
+You determine the maximum size avatars should display at. For themes that are not that wide, a smaller avatar will save some space.<br /><br />
+Please note that Simple:Press Forum supports the Gravatar2 WP plugin if it is installed and activated which caches gravatars locally
+and saves repeated calls to the Gravatar servers. Visit <a href="http://zenpax.com/gravatars2/">ZenPax</a> for plugin details.
+[end]
+
+[rss-feeds]
+
+<strong>RSS Feeds</strong><br /><br />
+Simple:Press Forum supports 4 separate RSS feed options: All forums, Group of Forums, Individual Forum and Individual Topic.
+Individual Forum feeds can be disable/enabled on the Manage Forum page. The following options are for enabled RSS feeds.<br /><br />
+<strong>Number of Recent Posts to feed</strong><br />
+Set the number of items that will be sent at any one time when a feed is requested. Note that if the user does not have 
+permissions to view a specific forum, posts from that forum will not be included in their feed. Posts awaiting moderation
+are also excluded until approved.<br /><br />
+<strong>Limit to Number of Words</strong><br />
+Post content in an RSS feed can be limited to the number of words you specify. Leaving this value at zero
+allows the entire post to be sent.
+[end]
+
+[spam-detection]
+
+<strong>Spam Detection</strong><br /><br />
+Simple:Press Forum can use the effective 'math question' query to prevent spam posts being made automatically. 
+This option is set up in the User Group Permissions. However, the same tool can also be used on the user registration form
+to help counter bogus registrations which are a general nuisance. Please note that if this feature is invoked it applies to both
+Simple:Press Forum's registration form and the standard WordPress form.
+[end]
+
+[email-address-settings]
+
+<strong>Email Address Settings</strong><br /><br />
+By default, the term 'WordPress' is used as the sender of any email from within the system.
+These settings allow you to override that and enable you to use any email address preferred. These are the email address
+components that will be used in such forum emails as subscriptions and new private message.<br /><br />
+<b>Note:</b> These settings, once made, are global in that they will be used by WordPress for non-forum emails as well.
+[end]
+
+[new-user-email]
+
+<strong>New User Email</strong><br /><br />
+These settings allow you to tailor emails sent to new users following registration to your site and forum. You have full control
+over both the <strong>Email Subject Line</strong> and the content of the <strong>Email Message</strong><br /><br />
+<b>Note:</b> If you prefer the standard WordPress email version - or are using another plugin that is capable of generating the
+new user email, then turn the forum option off and the alternative version will be used in it's place.<br /><br />
+<strong>Placeholders</strong><br />
+The following keywords can be used as placeholders within the email and will be replaced by their values when the email is sent.
+It is very important to to enter these into the message text exactly as shown and the very minimum that should be used
+are the User Name and Password:<ul>
+	<li>%USERNAME%</li>
+	<li>%PASSWORD%</li>
+	<li>%BLOGNAME%</li>
+	<li>%SITEURL%</li>
+	<li>%LOGINURL%</li>
+	<li>%NEWLINE%</li>
+</ul><br />
+Note the use of %NEWLINE% to end paragraphs.
+[end]
+
+[forum-view-formatting]
+
+<strong>Forum View Formatting</strong><br /><br />
+<strong>Display recent Posts on Front Page</strong><br />
+Recent Posts can be listed on the front page of the forum. Note that this setting is the view that will be seen by
+member and guests. The Admin will see the new posts that they have not yet read or approved.<br />
+It may be considered unnecessary to display both this list and the QuickLinks new post list as they
+virtually perform the same function.<br /><br />
+<strong>Number of Recent Posts to Display</strong><br />
+If posts below the forums listing on the front page are turned on, this setting determine how many will be displayed.<br /><br />
+<strong>Display Recent Posts Above Groups</strong><br />
+As an alternative to displaying this list at the bottom of the forum index you may choose to display it at the top.
+[end]
+
+
+[single-forum-sites]
+
+<strong>Single Forum Sites</strong><br /><br />
+For sites that only have a sngle forum, checking this option will skip the initial forum 'front' page 'Group' view and will 
+directly load the single forums topic listing. In a multi-forum site, this option can also be used to ensure that users with 
+access to only one forum are also directed straight to the topic listing.
+[end]
+
+[forum-view-columns]
+
+<strong>Forum View Columns</strong><br /><br />
+Check the boxes to select which columns to display in the Forum index view. This can be useful if your page is tight for
+space. Possible options to turn or off are: <ul>
+	<li>Last Post Details</li>
+	<li>Number of Topics in Forum</li>
+	<li>Number of Posts in Forum</li>
+</ul>
+[end]
+
+[topic-view-formatting]
+
+<strong>Topic View Formatting</strong><br /><br />
+<strong>Topics to Display Per Page</strong><br />
+The topic index is paged to cater for large forums. You set here the number of topic rows to show per paged display.<br /><br />
+<strong>Number of Topics Paging Links to show</strong<br />
+The page links are shown in bars at the top and bottom of the topic index. Set the number to show. The first and last are always shown.<br /><br />
+<strong>Sort Topics by Most recent Postings (newest first)</strong><br />
+By default, topics are displayed in the order in which they were created. By turning on this option, when a topic receives
+a new post, it will then take the topmost position. Topics are therefore shown by those with the most recent postings.
+[end]
+
+[topic-view-columns]
+
+<strong>Topic View Columns</strong><br /><br />
+Check the boxes to select which columns to display in the Topic index view. This can be useful if your page is tight for
+space. Possible options to turn or off are: <ul>
+	<li>First Post date, poster and link</li>
+	<li>Last Post date, poster and link</li>
+	<li>Number of Posts in Topic</li>
+	<li>Number of times topic posts have been viewed</li>
+</ul>
+[end]
+
+[post-view-formatting]
+
+<strong>Post View Formatting</strong><br /><br />
+<strong>Posts to Display Per Page</strong><br />
+Posts are paged so that a topic with many contributions does not have to scroll too far or take to long too load.
+Select the number of posts to show per page.<br /><br />
+<strong>Display User Info Above Post</strong><br />
+Simple:Press Forum defaults to displaying the details of the post author (name, avatar, date etc.,) to the left of the
+post content. If you have a narrow content area to display the forum in, then it is worth considering displaying those
+details above the post so that the post content itself can use the full width of the column.<br /><br />
+<strong>Sort Posts Newest to Oldest</strong><br />
+By default, the post that started the topic is displayed at the top with each subsequent post following - oldest to newest.
+This option sorts in the reverse order displaying the most recent post in the topic first.<br /><br />
+<strong>Display Post-Edit Data</strong><br />
+This option will display details about any editing made to the post after the initial post was made. The users name and
+the date of the edit(s) are displayed. You can optionally limit this to only display the very last edit.
+[end]
+
+[date-time-formatting]
+
+<strong>Date/Time Formatting</strong><br /><br />
+You can set the way that all dates and times are displayed within the forum. This uses standard php date/time formatting.
+There is a link at the bottom to a page that explains the various options available.<br /><br />
+<strong>+/- Hours from Server</strong><br />
+Dates and Times will be saved as the current date and time on the server at your host. This is not necessarily within the same time zone as
+you. To enable the date and time in the forum to be displayed in your local time, you can set the number of hours to either add or subtract
+to your host's server time.
+[end]
+
+[post-links-filtering]
+
+<strong>Post Links Filtering</strong><br /><br />
+You can set links within forum posts to include 'rel=noffolow' and/or 'target=_blank' which will force the link to open in a new
+browser windw or tab.
+[end]
+
+[profanity-filter]
+
+<strong>Profanity Filter</strong><br /><br />
+You can set up 'profanity filters' if desired that will substitute a 'banned' word or phrase with an alternative of your choosing.
+Start each new word or phrase you wish to substitute on a new line in the top box. Place the alternative on a new line in the bottom box ensuring that
+each entry is in the same position in the list. When posts are displayed, any match found in the top list will be substituted with the from the equivalent
+position in the bottom list.
+[end]
+
+[post-linking]
+
+<strong>Post Linking</strong><br /><br />
+Post Linking allows you the option to automatically create a new topic with the content of a blog post. The opposite of
+this is also available - creating a blog post from a new forum topic. Permissions to allow this can be turned on in the
+User Group Permission Sets.<br /><br />
+As an option to Post Linking, you can decide to only create an excerpt of the blog post in the new forum topic. if you wish
+to do this, check the option and enter the word count you wish the excerpt to be truncated to.<br /><br />
+<b>PLEASE NOTE:</b>It is NOT possible to create a topic link if the blog post is <b>future dated</b>>.
+[end]
+
+[link-text-display]
+
+<strong>Link Display Text</strong><br /><br />
+if you are using Post Linking, you can determine the link text that displays both in the blog post and
+the forum topic post. These link back to each other. You can also chose to display the link at the top of the blog post.
+An optional Icon can also be included by using the placeholder %ICON% which will pull the relevant icon from your forum skin resources.
+[end]
+
+[show-as-comments]
+
+Turning on this option will automatically display the posts from a linked topic as comments on the linked blog post. 
+The topic posts are appended to the comments or can replace te comments if not in use.
+[end]
+
+[announce-template-tag]
+
+<strong>Announce Template Tag</strong><br /><br />
+The 'Announce template tag is a special tag that can be used outside of the forum (i.e., in a sidebar). It is capable of using remote calls
+to update itself without requiring a page refresh. The tag displays the most recent posts, showing the current user those they have not yet read.
+As well as the tag code being placed in your blog theme, it must also be enabled here.<br /><br />
+<strong>Display as Unordered List</strong><br />
+By default, the tag content displays in a small HTML table. By checking this option it displays as an HTML unordered list<br /><br />
+<strong>Tag Display Heading</strong><br />
+Defines the main heading that will appear above the 'announce' list. You can use any appropriate HTML tags for styling.<br /><br />
+<strong>Text format of Tag Post Link</strong><br />
+You may determine the layout and content of each post entry in the 'announce' tag list. You may use any appropriate HTML tags for styling
+and the following placeholders are available which must be used exactly as shown:<ul>
+	<li>%FORUMNAME% - The full name of the forum</li>
+	<li>%TOPICNAME% - The full name of the topic</li>
+	<li>%POSTER% - The name of the author of the post being linked to</li>
+	<li>%DATETIME% - The date and time the post was made</li>
+</ul><br /><br />
+Note that by default a small icon is displayed beside each post entry (in table view). These can show whether the post has been
+read or not by the current user. The icons are contained in the forum skin you are using.
+[end]
+
+[announce-auto-refresh]
+
+<strong>Announce Auto Refresh</strong><br /><br />
+It is possible to have the 'Announce' tag auto refresh itself which means new posts will appear in the list as they are created.
+It is recommended to only use this feature if really required as it does require the system to make a regular call to the server and the database.
+The time between refreshes can also be set. Be cautious with this. If it is set too frequently (i.e., 15 seconds) a slow or busy server my be unable to handle the
+request before the next one arrives! It is best to set the refresh for a longer period, especially on a busy server.
+[end]
+
+[add-topic-tag]
+
+<strong>Using the 'Add Topic' Tag</strong><br /><br />
+The 'Add Topic' tag allow you to place a template tag on, for example, the sidebar that enables the user to click through directly 
+to an Add Topic form on a desingated forum. That designated forum is selected here.
+[end]
+
+[forum-skin-icons]
+
+<strong>Forum Skin/Icons</strong><br /><br />
+These settings determine the forum skin (CSS and required image files) and the set of icons that will be used to render your forum pages.
+When first installed they are set to the default skins and icon set.
+[end]
+
+[display-icon-text]
+
+<strong>Display Icon Text</strong><br /><br />
+There are two styles of icons that can be used with Simple:Press Forum. The first (and this applies to the default set), require a textual
+label to be displayed beside the icons. Other sets may have the text graphically contained on the icon itself. These settings allow to to select which 
+icon label text should or should not be displayed. Checked labels will display the text alongside the equivalent icon.
+[end]
+
+[adjust-font-size]
+
+<strong>Adjust the Font Size</strong><br /><br />
+The base font size used by the forum is set in the forum skin CSS file. If you do not wish to edit the skin bit do wish to adjust the size
+of text display you can adjust it here. Start with a value of 100 and check the results. Adjust up or down to suit your preference.<br />
+To leave the sizes as supplied in the skin - leave this field empty.
+[end]
+
+[forum-permalink] 
+
+<strong>Update Forum Permalink</strong><br /><br />
+When Simple:Press Forum is installed it sets the forum permalink to match the structure of your blog. This is a backup method for updating your permalink.  SPF should automatically update itself if your permalink is changed, but this method can be used if that doesn't seem to be functioning correctly.
+[end]
+
+[check-for-updates]
+
+<strong>Check for Updates</strong><br /><br />
+You can check for an update to Simple:Press Forum at any time by clicking here. This will tell you if you are using the very latest version.<br /><br />
+You can also turn automatic checks for updates. If 'on' this will display a message at the top of ther admin pages when an update to Simple:Press Forum
+is available.
+[end]
+
+[uninstall]
+
+<strong>Un-install</strong><br /><br />
+If at any time you wish to entirely remove Simple:Press Forum from your site, deactivating the plugin will stop it working but will NOT remove the data.
+To completely un-install Simple:Press Forum, including the removal of all data tables and option records, check the un-install box and THEN deactivate the plugin.
+[end]
+
+[exclude-check-box]
+
+If you have checkboxes or radio buttons outside of the forum display - in  a sidebar for example - they may inherit the forums special 
+checkbox graphic. If you prefer them not to then please enter the <b>name</b> of each control to be excluded. These <b>MUST</b> be in a comma delimited list.
+[end]
+
+
+[modify-build-number]
+
+<strong>Modify Build Number</strong><br /><br />
+*** WARNING - Change this only if you know what you are doing!<br /><br />
+This option update allows admins to change the current Simple:Press Forum build number.  WARNING - Change this only if you know what you are doing!  Changing the build number should only be done in rare cases when there were issues during an upgrade or installation.<br /><br />
+By manually changing the build number, you can force the upgrade/install procedure to run once again.  Normally, you should only change this when recommended by the Simple:Press Forum team in the support forum.
+[end]
+
+[sig-images]
+
+<strong>Signature Image Sizes</strong><br /><br />
+If you have enabled signature images for users via permissions, this option will allow you to limit the size of the signature image.  Enter the maximimum width and height into the input fields.  If youd do not wish to limit the size of image signatures, enter a value of zero for width and height.  You can limit the width or height independantly of each other.
+[end]
+

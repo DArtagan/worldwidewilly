@@ -1,0 +1,247 @@
+Simple:Press Forum
+How To Help File (English)
+$LastChangedDate: 2009-04-18 10:43:56 +0100 (Sat, 18 Apr 2009) $
+$Rev: 1727 $
+
+[Forum_on_your_Home_Page]
+
+Under most circumstances it should be possible to set your forum to be the front page (home) of your site should you wish to do so. It may
+not be possible with all permalink structures however. To try this, follow these procedures:<br /><br />
+<ol>
+<li>Go to Settings/Options, Reading, and set your blog 'static front page' as the forum page.</li>
+<li>Go to Forum/Manage Options - Toolbox tab and click on 'Update Forum Permalink'.</li>
+</ol>
+The forum permalink will be something like www.mysite.com/forum (depending upon your page title).<br /><br />
+The result will be that the forum permalink will remain www.mysite.com/forum and your front page will be home to a working forum with valid links.
+If, however, you change the front page back to posts or to another page - remember to update the forum permalink once more.
+[end]
+
+[Forum_in_a_Sub-Page]
+
+It is possible to set up your forum to display in a sub-page. The procedure for this is as follows:
+<br />
+<ol>
+   <li>Create a new page. Give it a title and note the slug. (example 'main-page')</li>
+   <li>Create a sub-page with the page from step 1 as the parent. Give it a title and note the page slug. (example 'my-forum')</li>
+   <li>Open Forum > Options > Admin tab</li>
+   <li>In the slug field, enter the full slug (usually lowercase)for both pages and include the dividing slash: (example) main-page/my-forum</li>
+   <li>Save the forum options</li>
+   <li>Go to the Forum > Options > Toolbox tab and click on Update Permalink.</li>
+   <li>Create a link to your forum using the full parent-sub page permalink.</li>
+  </ol>
+[end]
+
+[Using_Gravatars]
+
+To enable the use of Avatars within your forum, access the 'Forum > Manage Options' admin screen and click
+on the 'Global' tab. At it's most basic, Simple:Press Forum uses the three default avatars (Guest, Member and Admin).<br /><br />
+By allowing users to upload their own avatars, through the permissions settings, your members can add a custom avatar to be stored on
+your server. You can determine the maximum size (by pixel width) allowed.<br /><br />
+By checking the option to use Gravatars by default, the forum will search for a member's Gravatar (at www.gravatar.com) and, if it exists, will
+use that in place of any locally stored image, falling back to local uploads and then defaults if a gravatar is not found.<br /><br />
+Simple:Press Forum is also able to make use of the <b>Gravatars2</b> WordPress Plugin by Kip Bond (<a href="http://zenpax.com/gravatars2/">ZenPax</a>) which
+caches gravatars locally wherever possible and therefore offers a very high level of improved performance. If you wish to use gravatars, this plugin is recommended.<br /><br />
+Simple:Press Forum is also able to use the default avatar options in WP.
+[end]
+
+[Using_Democracy_Polls]
+
+Simple:Press Forum has built in support for the <b>Democracy Polls</b> WordPress plugin by Andrew Sutherland (<a href="http://blog.jalenack.com/archives/democracy/">Jalenack</a>)<br /><br />
+If you have this plugin activated and wish to use it in your forums, access the 'Forum > Manage Components' screen and open the 'Extensions' tab, and then check the box for Democracy Polls.<br /><br />
+Follow the instructions that come with Democracy Polls for it's use.<br /><br />
+<b>Please Note:</b> The Democracy Polls plugin comes with it's own CSS file and also CSS that can be added to your theme stylesheet (style.css).
+Under the 'simple-forum/styles' folder is a 'democracy' folder that contains alternate CSS that works well with Simple:Press Forum. You may want to
+take a look at this CSS and optionally adopt it into the Democracy folder and your theme stylesheet. It can not be used where it is currently located.
+[end]
+
+[Use_Feedburner_for_RSS]
+
+Simple:Press Forum allows for RSS feeds for individual Groups, Forums and Topics as well as a feed for 'All' forum activity. With the exception of
+Topics, feeds can be re-directed to a service such as <a href="https://www.feedburner.com">FeedBurner</a>.<br /><br />
+If you wish to do this, all re-directions can be made on the 'Forum > Manage Forums' admin screen. Load up the screen and at the far right of all group and forum rows
+will be displayed the standard RSS icon. Clicking on the icon brings up a form that shows (a) the internal URL for the selected feed and (b) an input field
+where the service feed URL needs to be entered.<br /><br />
+Note that to set up a service feed for 'All' activity, the icon can be found at the very bottom of the list. Note also that it is not currently
+possible to set up service feeds at the topic level.
+[end]
+
+[New_User_Email]
+
+Simple:Press Forum allows you to completely customise the email that is sent in response to new user registrations. Open the 'Email' tab
+in the 'Forum > Manage Options' admin screen to make these changes.<br /><br />
+By default, emails are sent from 'WordPress' but by changing the <b>settings</b> you can ensure your own email address, or an alternative email address, is used.<br /><br />
+The <b>subject line</b> and email <b>message</b> can be completely changed to your own requirements. Note that emails are sent as plain text so embedding HTML will not
+format the email and will itself as text.<br />
+Make use of the placeholders to embed the necessary registration details for the new member and remember to use the %NEWLINE% placeholder to embed a 'carriage-return/line-feed'.
+[end]
+
+[Special_Forum_Icons]
+
+Up to 3 special icons can be created that will appear in the login strip beside the login/logout icon. You can set these up in the 'Custom Icons' tab
+at 'Forum > Manage Components' and need to supply the icon image file name, the display text (if desired) and the icon link. Custom icons can link to anything
+but could be used, for example, to display a set of forum 'rules' or terms and conditions or maybe a custom contact form page.<br /><br />
+Custom icon files <b>must</b> be stored in the 'custom' folder contained in your selected 'skin' folder. This is where Simple:Press Forum will look for them.
+[end]
+
+[Custom_Group/Forum_Icons]
+
+Simple:Press Forum allows you to easily change the icons that appear beside Groups and Forums. Access the 'Forum > Manage Forums' admin screen to display the current list of forums.
+To the far left of each group and forum entry, the default icons (from your selected skin) are displayed. To change this to a custom icon, click
+on the icon and complete the popup form with the custom icon file name.
+Custom icon files <b>must</b> be stored in the 'custom' folder contained in your selected 'skin' folder. This is where Simple:Press Forum will look for them.
+[end]
+
+[Uploading_Images]
+
+It is possible to allow your members to upload images to your server for use in posts. This option is subject to the permission set applied
+to the user group your members belong to. There are, however, some conditions that also need to be met:<br />
+<ol>
+<li>Image upload is only currently supported using the TinyMCE Editor</li>
+<li>Uploads are limited to jpg, gif and png files</li>
+<li>The php GD library must be installed on the host server</li>
+<li>You have created a folder with suitable permissions under the 'wp-content' folder and recorded the folder name in the field
+provided on the 'Forum > Manage Components' 'Extensions' tab.</li>
+</ol><br />
+If these conditions are met and the member has permission to upload, a 'browse' button will be shown on the standard 'image' dialog of the
+editor which will allow the user to browse local files and upload a file to your server into the designated folder.
+[end]
+
+[Popup_Image_Enlargement]
+
+Images placed in forum posts can take up a lot of room and many users do not take this into account when they use one in a post.
+By turning on the option to use Popup Image Enlargement and by specifying a thumbnail width, correctly formed 'img' tags will display as a thumbnail
+that will enlarge into a popup window when clicked on.<br /><br />
+Pop Image Enlargement is enabled/disabled on the 'Forum > Manage Components' panel, the 'Extensions' tab.
+[end]
+
+[Embedding_Video]
+
+Using the TinyMCE editor, video can be embedded into a Simple:Press Forum post via the editor's 'media' toolbar button.<br /><br />
+Simply bring up the media dialog and set the media file type and the URL and the dimensions if known. If correct, the video can
+also be previewed in the dialog before committing to the post.
+[end]
+
+[Quick_Overview]
+
+Simple:Press Forum has a sophisticated user and forum permission system built in to it. It is very much recommended that you get to understand
+how this system works when setting up forums for the first time. This is a quick overview.<br /><br />
+Anyone visiting your site will belong to a User Group. The three default Groups are 'Guests', 'Members' and 'Moderators'. (Note that the forum Admins
+do not need to be assigned to a group and are automatically granted blanket permissions). A visitor who is not a registered user will automatically be
+treated as a member of the 'Guest' User Group.  On the 'Manage Options' panel, the 'Members' tab, you can control which User Group is to be used for Guests.  When users register on your site, they will, by default,
+be placed into the 'Members' User Group unless you specify otherwise modified in the 'Forum > Manage Options > Members Tab'.<br /><br />
+Normally, when setting up a new forum, these three User Groups will become attributes of it but you can assign any combination of User Groups you choose.<br />
+A User Group associated with a Forum also requires a Permission Set. This defines the exact operations available to all users in the associated User Group. There are 6 default
+Permission Sets set up upon installation. By default, for example, the Guest User Group (in combination with a Forum), is assigned the 'Limited Access' Permission Set but you may prefer to
+assign the 'Read Only Access' or the 'No Access' sets.<br /><br />
+In this way it is possible to create a very general Forums/User Groups/Permissions paradigm or, by defining your own, new combinations, a very granular approach
+to forum user security.
+[end]
+
+[Create_a_Private_Forum]
+
+The basic tasks to creating a 'private forum' - meaning a forum with either limited access to a sub-set of your membership or a forum that
+anyone not a member will not have access to - are really very straight-forward.
+<ol>
+<li>Begin by defining a new User Group especially for the forum(s)</li>
+<li>Add the members to the new User Group</li>
+<li>Create a new Permission Set</li>
+<li>Turn on/off the permissions you want to allow and disallow</li>
+<li>Create the new Forum</li>
+<li>Assign the forum the new User Group and Permission Set</li>
+</ol><br />
+You may also wish to assign the 'Guests' group with 'No Access' and optionally the Members group as well.
+[end]
+
+[Bans_and_Suspensions]
+Its also possible to use the User Groups and Permissions to implement Forum Bans and/or Suspensions.<br /><br />
+An example way to do this would be to create a User Group called Suspensions and define a Permission Set with the desired limited rights for users that have a suspension.  These limited rights could be completely no access or limited access as defined in the Permission Set.  Then move (not Add since that would still leave the Member in any other User Groups) the Member that you want Suspend into this User Group.  The Member will now have these limited permissions.  Make sure that the Member is not listed in any other User Groups.  Then, on the Manage Forums admin panel, apply this new User Group and Permission Set globally to all Forums.  This new User Group and Permission Set can also be set up to be a default for all future Forums that are created.<br /><br />
+When you feel that the Suspension can be ended, move/add the Member back into the "normal" User Groups.  Similar functionality can be achieved for Bans too.  A Ban might be used for WP Users that you don't want accessing the Forums.
+[end]
+
+[How_to_Upgrade]
+
+When an updated version of Simple:Press Forum becomes available, it will cause an extra line to display beneath
+it's entry in the plugins index list.<br />
+You can also perform a manual check in the 'Forum > Manage Options > Toolbox Tab'.<br /><br />
+Finally, on the same Toolbox Tab, you can turn on the option that will make automatic checks and display a notice on
+every admin page.<br /><br />
+Unless specific instructions are provided with a version upgrade, it is generally not required to deactivate the older version
+although be aware that as the new version copies to the plugin folder, any user access to the forums may result in an error being displayed.
+It is usually safe to copy the new version over the top of the current version but beware of any customisations you may have made. In particular:
+<ol>
+<li>If you have created Program Hook routines, protect the file so as not to lose them</li>
+<li>if you have created a custom Skin and/or Icon Set ensure they do not get overwritten and lost</li>
+<li>If you have created any filters ensure they are also safe from loss</li>
+</ol><br />
+<b>Please Note:</b> Simple:Press Forum uses a different method to install than most standard WordPress plugins. Activating the plugin alone does NOT
+install it. To actually install it you will need to activate and then visit the Forum Admin page where the option to Install/Upgrade will be
+given.<br />
+When you upgrade your version of Simple:Press Forum (copy up the files but not perform the actual upgrade step), the forums immediately become
+unavailable to visitors until complete installation has taken place.
+[end]
+
+[How_to_Completely_Remove]
+
+Deactivating the Simple:Press Forum and removing the plugin code files does NOT remove the data tables and option records that the plugin
+creates and uses. To completely remove every trace of the plugin, visit the 'Forum > Manage Options > Toolbox Tab' and check the 'Uninstall' option.
+When this is checked, deactivating the plugin will then remove all data. Note that this can not be reversed other than from a backup of your database
+and system.
+[end]
+
+[Using_Language_Files]
+
+If a translation is available in your language it will come in the form of a file that contains your language code in it's file name with an extension
+of 'mo'. This file must be placed in the 'plugins/simple-forum/languages/' folder and your language code must be correctly set in your WordPress 'config.php' file.
+[end]
+
+[Translations]
+
+Please remember that translated versions of Simple:Press Forum will always follow the release of any version and only then
+if there is a volunteer working in your language.<br /><br />
+Translating is not hard (if you have the language skills of course) but can be time consuming. If no language file is available
+then please do consider volunteering to create one. Just use my contact form.
+[end]
+
+[Using_Forum_Avatars_in_your_Blog]
+
+The forum avatars can be used in your blog comments and will utilise the same settings and options set up for the forum. To do this, use
+the template tag <b>sf_show_forum_avatar(<i>email_address</i></b>)<br /><br />
+The tag requires the users email address. This is available within the comment 'loop' in your comment theme template. The following function
+can be used within the loop:<br /><br />
+&lt;?php sf_show_forum_avatar($comment->comment_author_email); ?&gt;
+[end]
+
+[Linking_Explained]
+
+It is possible to create a link between a blog post and a forum topic. This sets up the possibility of user discussion taking place in
+both the traditional blog comments and/or in a forum topic thread. Some users have turned off comments on such links using only the forum
+as the base for user discussion. <br /><br />
+To use linking, the user must have the capability to publish blog posts and have the forum permission to both create new topics and create
+linked posts/topics.<br /><br />
+There is also a forum option to enable the topic thread to appear in the blog comments section. If this option is turned on, the forum topic
+will be displayed after any blog comments on the blog post.<br /><br />
+Please note that it is not currently possible to set up a link for a future-dated, unpublished post. But it is possible to create a link 
+on an existing, already published post.
+[end]
+
+[Creating_the_Link]
+A link can be forged either when making a new blog post or when creating a new forum topic.<br /><br />
+<b>Linking from a New Blog Post</b><br />
+If the correct permissions are set, when you create a new blog post an extra section will be available on the 'New Post' admin page.
+To create a link, simply check the box and select the forum for the new, linked topic.<br />
+When the new blog post is published, a corresponding topic will also be created in the selected forum.<br /><br />
+<b>Linking from a New Forum Topic</b><br />
+if the correct permissions are set, when you create a new forum topic a checkbox below the editor (in the 'Options' group) will be made available.
+Simply check the option. A list of blog categories will then open up. Check the desired blog categories for this new post and save the new topic.
+A corresponding blog post will be created.<br /><br />
+<b>The Links</b><br />
+Customisable links will be displayed in both the blog and the forum. Aspects of these links can be changed in the Links Option admin panel.
+[end]
+
+[Breaking_the_Link]
+Removing/deleting either the blog post or the forum topic will break the link. Note that deleting one will not delete the other - just the
+link is removed.<br /><br />
+To break the link without removing either post of topic, an admin tool icon is available in forum view (i.e., topic list) that the admin
+can use. This will break the link but retain both strands of the original link.
+[end]
+

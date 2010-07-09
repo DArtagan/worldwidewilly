@@ -1,0 +1,139 @@
+/*
+Theme Name: WorldWideWilly
+Theme URI: http://www.worldwidewilly.net
+Description: Based on the K2 theme, customized to match the rest of the website
+Author: William H. Weiskopf, IV
+Author URI: http://www.worldwidewilly.net
+Template: k2
+*/
+
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;}
+
+#page {
+	width: 70%;
+	height: 100%;
+	padding: 0px;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-left: 10px solid #000000;
+	border-right: 10px solid #000000;
+	border-bottom: 10px solid #000000;
+	background: #FFFFFF;
+	background-image: url("/images/The W Background Blog.png");
+	background-repeat: no-repeat;
+	background-attachement: relative;
+	background-position: bottom right;}	
+	
+#header {
+	height: auto;}
+	
+a h1 {
+	text-decoration: none;}
+
+h1 a:hover, h1 a:visited:hover {
+	text-decoration: none;}
+	
+h1 {
+	padding: 0px;
+	margin: 0px;}
+	
+.nav {
+	font-size: 162.5%;}
+	
+#content {
+	clear: none;
+	width: 70%;}
+
+.content {
+	width: 70%;}
+	
+#primary  {
+	float:left;
+	padding:20px;
+	position:relative;
+	width: 100%;}
+	
+#headerimg .description {
+	text-align: left;}
+	
+#rollingarchives {
+	width: 50%;}
+	
+.post {
+	margin-bottom: 40px;
+	text-align: justify;}
+
+#sidebar-1, #sidebar-2 , .secondary {	
+	width: 90%;
+	float: none;
+	overflow: visible;
+	padding: 0px;
+	padding-left: 7.5%}
+	
+#sidebar #searchform #s {
+	width: 100%;
+	padding: 2px;}
+	
+div#categories-4, ul div#catergories-4, li div#catergories-4, #categories-4 h4, #archives-3 h4 {
+	text-indent: 0px;}
+
+ul.menu {
+	visibility: hidden;}
+	
+.columns-two #page {
+	width: inherit;}
+
+.clear {
+	clear: none;}
+	
+body.columns-two #primary {
+	margin-right: 0px;}
+	
+body.columns-two #primary-wrapper {
+	float:left;
+	margin-right: 0px;
+	width: auto;}
+	
+.entry-head .entry-meta {
+background:none;
+min-height:16px;
+padding-left:0px;
+}
+
+#footer p {
+	line-height:1em;
+	text-align:center;}
+
+#footer a:hover {
+	border: none;
+	color:#114477;
+	text-decoration:none;}
+
+#footer a {
+	border-bottom: none;
+	color:#FFFFFF;
+	font-weight:bold;}
+	
+.navigation {
+	padding-top: 10px;
+	padding-bottom: 20px;}
+	
+.livesearch #s {
+	width: 115px;}
+	
+#s, #search-label.overlabel-apply {
+-moz-border-radius:2px 2px 2px 2px;
+	width:127px;
+	line-height: 13px;}
+	
+#searchreset, #searchload {
+	right:4px;
+	top:1px;
+	width:18px;}
+	
+#search-label.overlabel-apply.hide  {
+	text-indent:-10000px;}

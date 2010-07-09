@@ -1,0 +1,85 @@
+/* 	
+Democracy 2.0.1
+Modified for Simple:Press Forum
+$LastChangedDate: 2009-01-01 03:25:57 +0000 (Thu, 01 Jan 2009) $
+$Rev: 1093 $
+*/
+
+.democracy,
+#sforum .sfposttable .sfpostcontent .democracy {
+	border: 1px solid silver;
+	max-width: 275px;
+}
+
+.democracy img,
+	#sforum .sfposttable .sfpostcontent .democracy img {
+	width: 100%;
+	margin-bottom: 4px;
+	vertical-align: middle;
+}
+
+.democracy input,
+	#sforum .sfposttable .sfpostcontent .democracy input {
+	vertical-align: middle;
+	margin-right: 5px;
+	width: auto;
+}
+
+.democracy .addAnswerText,
+	#sforum .sfposttable .sfpostcontent .democracy .addAnswerText {
+	width: 80%;
+}
+
+.dem-graph,
+#sforum .sfposttable .sfpostcontent .dem-graph {
+	border: 1px solid #ccc;
+	height: 10px;
+}
+
+.dem-graph a, .dem-graph a:hover,
+#sforum .sfposttable .sfpostcontent .dem-graph a,
+#sforum .sfposttable .sfpostcontent .dem-graph a:hover {
+	background: #efefef;
+	border-bottom: 5px solid #e0e0e0;
+	border-right: 1px solid #ccc;
+}
+
+* html .dem-graph a, * html .dem-graph a:hover,
+* html #sforum .sfposttable .sfpostcontent .dem-graph a,
+* html #sforum .sfposttable .sfpostcontent .dem-graph a:hover {
+	border-bottom-width: 6px;
+}
+
+* html .dem-graph,
+* html #sforum .sfposttable .sfpostcontent .dem-graph {
+	height: 11px;
+}
+
+.dem-graph b, .dem-graph i,
+#sforum .sfposttable .sfpostcontent .dem-graph b,
+#sforum .sfposttable .sfpostcontent .dem-graph i {
+	color: #555;
+}
+
+.dem-voted-for-this,
+#sforum .sfposttable .sfpostcontent .dem-voted-for-this {
+	border-color: #888;
+}
+
+/* blix fix */
+.democracy ul { padding: 0; } 
+.democracy label {
+	float: none;
+	display: inline;
+}
+
+.democracy ul,
+#sforum .sfposttable .sfpostcontent .democracy ul {
+	padding-left: 1.5em;
+}
+
+.democracy ul li,
+#sforum .sfposttable .sfpostcontent .democracy ul li {
+	list-style-type: disc;
+	list-style-image: url(star.png);
+}

@@ -1,0 +1,118 @@
+/* 	
+Democracy 2.0.1
+Modified for Simple:Press Forum
+$LastChangedDate: 2009-01-01 03:25:57 +0000 (Thu, 01 Jan 2009) $
+$Rev: 1093 $
+*/
+
+.dem-graph,
+#sforum .sfposttable .sfpostcontent .dem-graph {
+	position: relative;
+	font: 9px/10px arial, sans-serif;
+	margin-top: 2px;
+	padding-right: 1px;
+	margin-bottom: 3px;
+}
+
+.dem-graph a, .dem-graph a:hover,
+#sforum .sfposttable .sfpostcontent .dem-graph a,
+#sforum .sfposttable .sfpostcontent .dem-graph a:hover {
+	display: block;
+	float: left;
+	height: 5px;
+	cursor:default;
+	text-decoration: none;
+	border: 0;
+}
+
+.dem-winner a, .dem-winner a:hover,
+#sforum .sfposttable .sfpostcontent .dem-winner a,
+#sforum .sfposttable .sfpostcontent .dem-winner a:hover {
+	border-right: 0;
+}
+
+.dem-winner,
+#sforum .sfposttable .sfpostcontent .dem-winner {
+	padding-right: 0;
+}
+
+.dem-graph b, .dem-graph i,
+#sforum .sfposttable .sfpostcontent .dem-graph b,
+#sforum .sfposttable .sfpostcontent .dem-graph i {
+	float: left;
+	display: block;
+	position: absolute;
+	margin-left: 3px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.dem-vote-button,
+#sforum .sfposttable .sfpostcontent .dem-vote-button {
+	display: block;
+	margin: 6px 0;
+}
+
+.democracy,
+#sforum .sfposttable .sfpostcontent .democracy {
+	padding: 1em;
+	margin: .5em 0 .5em 1em;
+}
+
+/* kubrick fixies */
+.democracy form,
+#sforum .sfposttable .sfpostcontent .democracy form {
+	text-align: left;	
+}
+
+html>body .entry .democracy ul,
+html>body .entry #sforum .sfposttable .sfpostcontent .democracy ul {
+	text-indent: 0 !important;
+}
+
+.democracy input,
+#sforum .sfposttable .sfpostcontent .democracy input {
+	vertical-align: middle;
+}
+
+.dem-graph a i, .dem-graph a:hover b,
+#sforum .sfposttable .sfpostcontent .dem-graph a i,
+#sforum .sfposttable .sfpostcontent .dem-graph a:hover b {
+	display: none;
+}
+
+.dem-graph a:hover i,
+#sforum .sfposttable .sfpostcontent .dem-graph a:hover i {
+	display: block;
+}
+
+/* yay IE hack - display or visibility don't work */
+* html .dem-graph a i, * html .dem-graph a:hover b,
+* html #sforum .sfposttable .sfpostcontent .dem-graph a i,
+* html #sforum .sfposttable .sfpostcontent .dem-graph a:hover b {
+	filter: alpha(opacity=0);
+	display: block;
+}
+
+* html .dem-graph a:hover i,
+* html  #sforum .sfposttable .sfpostcontent .dem-graph a:hover i {
+	filter: alpha(opacity=100);
+	display: block;
+}
+
+.dem-total-votes, .dem-added-by-guest,
+#sforum .sfposttable .sfpostcontent .dem-total-votes,
+#sforum .sfposttable .sfpostcontent .dem-added-by-guest {
+	display: block;
+	margin: 3px 0;
+}
+
+.dem-user-added,
+#sforum .sfposttable .sfpostcontent .dem-user-added {
+	display: block;
+}
+
+.dem-archives .democracy,
+#sforum .sfposttable .sfpostcontent .dem-archives .democracy {
+	margin-bottom: 30px;	
+}

@@ -1,0 +1,110 @@
+Simple:Press Forum
+Installation Help File (English)
+$LastChangedDate: 2009-01-12 05:06:51 +0000 (Mon, 12 Jan 2009) $
+$Rev: 1186 $
+
+[Check_the_WordPress_Page]
+
+Simple:Press Forum uses a WordPress 'Page' to create the forum views. This should be automatically
+created during the installation of the plugin but sometimes this is not possible. If your forum does not display
+the first thing to check is the Page record.
+<ol>
+<li>Access the 'Manage > Pages' admin screen and look for the page entry with the name of <b>Simple:Press Forum</b>.</li>
+<li>If it is listed, open it for editing. If not, create a new page and give it a title of your choice.</li>
+<li>You can change the page title at any time. The page title optionally appears above the forum display.</li>
+<li>Check the name of the 'page slug'. This is created as <b>sf-forum</b> but again can be changed as preferred.</li>
+<li>When the title and slug are as you want them, save the page record.</li>
+<li>Note the page slug of the page shown in the 'Manage > Pages' index list.</li>
+<li>Access the 'Forum > Manage Options' admin screen and click on the 'Global' tab.</li>
+<li>Make sure that page slug fields is exactly the same (including case!) as the actual page record.</li>
+<li>If it is different, or you have changed the slug, correct them and save the options record</li>
+</ol>
+[end]
+
+[Updating_the_Permalink]
+
+During the installation the forum permalink is set based upon your system permalink. if for any reason the forum
+refuses to display, the permalink setting should be checked.
+<br /><br />
+<ol>
+<li>Access the 'Forum > Manage Options' admin screen.</li>
+<li>Click on the 'Toolbox' tab</li>
+<li>Click on the 'Update Forum Permalink' button.</li>
+<li>The correct permalink will be saved and displayed above the button</li>
+</ol>
+[end]
+
+[Only_the_Front_Page_Displays]
+
+This is almost certainly caused by a conflict with another plugin.
+Please review the known 'plugin conflict' topic.
+[end]
+
+[Nothing_Displays]
+
+If your forum displays an empty page - not even a 404 error - then it is likely that your theme is missing an
+important component in it's header file (usually entitled 'header.php'). To check this:
+<ol>
+<li>Open the themes header.php file in edit mode</li>
+<li>Before the closing &lt;/head&gt; tag look for the following:<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;?php wp_head(); ?&gt;<br /><br />
+</li>
+<li>If it is not there, the forum page will not load so add it in and save the template file</li>
+</ol>
+[end]
+
+[Unable_to_Save_Posts]
+
+This is almost certainly caused by a conflict with another plugin.
+Please review the known 'plugin conflict' topic.
+[end]
+
+[Using_WP-Cache]
+
+Simple:Press Forum will not successfuly operate using the WP-Cache plugin as the views and rates
+of change are too dynamic. If you are using WP-Cache, you need to exclude the forum slug in the cache options.
+[end]
+
+[Plugin_Conflicts]
+
+The following plugins are known to conflict with Simple:Press Forum. This is not necessarily a complete list:
+<ul>
+<li>Permalink Redirect</li>
+<li>Google Analytical</li>
+<li>Contact Form 7</li>
+<li>WP-Lightbox (version dependent)</li>
+<li>Dagon Design Sitemap Generator</li>
+<li>Wassup</li>
+<li>WP Affiliate</li>
+</ul>
+<br />
+If you are using any of these plugins and experience problems, please deactivate them
+and test the forum again before seeking further assistance.
+[end]
+
+[Cannot_Upload_Avatars]
+
+Check that the Avatars are being stored in the correct place. When Simple:Press Forum is installed, it
+attempts to create a folder named '<b>forum-avatars</b>' directly beneath the '<b>wp-content</b>' folder. It
+then  attempts to move the default avatar images from the plugin 'styles/avatars' folder to this new folder.<br /><br />
+Dependent upon permissions, this sometimes does not manage to be done automatically so check that the new folder
+exists and that the three default avatars are stored there. If not - create the folder with permissions of 775 and copy
+the default images into it.  Its possible you may need to set the permissions to 777.
+[end]
+
+[Cannot_Upload_Smileys]
+
+Check that the Smileys are being stored in the correct place. When Simple:Press Forum is installed, it
+attempts to create a folder named '<b>forum-smileys</b>' directly beneath the '<b>wp-content</b>' folder. It
+then  attempts to move the default smileys images from the plugin 'styles/smileys' folder to this new folder.<br /><br />
+Dependent upon permissions, this sometimes does not manage to be done automatically so check that the new folder
+exists and that the default smileys are stored there. If not - create the folder with permissions of 775 and copy
+the default images into it.  Its possible you may need to set the permissions to 777.
+[end]
+
+[No_Login/Registrations_Icons]
+
+Before forum Logon/Logout and Registration buttons and icons become visible, your WordPress site must be set up to allow
+people to register. Check the WP admin page under 'Settings > General' and look for the
+'Membership' check box. This option turns on user registrations and enables to forum to allow logins from registered members.
+[end]

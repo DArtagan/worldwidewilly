@@ -1,0 +1,247 @@
+--- Manage Components ---
+$LastChangedDate: 2009-01-15 02:02:26 +0000 (Thu, 15 Jan 2009) $
+$Rev: 1207 $
+
+[smiley-options]
+
+<strong>Smiley Options</strong><br /><br />
+There are three sets of 'smileys' available for use within the forum should you allow their use.<br />
+<ul>
+<li><b>Custom Smileys:</b> These are smiley images that you, as the Admin upload for use and make available.</li>
+<li><b>TinyMCE Smileys:</b> This set is limited and available through the smiley icon on the TinyMCE editor toolbar. You can not add to this set.</li>
+<li><b>WordPress Smileys:</b> A limited set supplied with WordPress available only by typing in their code.</li>
+</ul><br />
+If you choose to allow the use of Smileys they should be turned on here and the preferred set selected. If 'custom smileys' are selected, they will appear in
+a bar underneath the post editing window where users can select and include them in their posts.
+[end]
+
+[smiley-upload]
+
+<strong>Smiley Uploads</strong><br /><br />
+If you have selected 'Custom Smileys', you can upload new images to the set delivered with the plugin. You will need to designate a name for the Smiley
+and the keyboard 'code' used to invoke it.
+[end]
+
+[custom-smileys]
+
+<strong>Custom Smileys</strong><br /><br />
+This shows the current contents of the 'forum-smileys' folder where custom smileys are stored. If you wish to remove one then click on the checkmark and when you
+update the cmponents it will be removed. Note that it only removes the attachment to the forum. It does NOT remove the image file.
+[end]
+
+[private-messaging]
+
+<strong>Private Messaging</strong><br /><br />
+Before any members can use the Private Messaging System - regardless of their permissions - it must first be enabled, or turned on.
+Once active, only those in user groups with a permission set allowing the use of private messaging will be able to access the system.<br /><br />
+<strong>Email Notifications</strong><br />
+If you are allowing the use of Private Messaging you may set the option for notification emails to be sent to members when a message
+arrives in their inbox.<br /><br />
+<strong>Maximum Inbox Size</strong><br />
+Maximum Inbox size is based on the number of messages stored, regardless of their individual size. If you set this option to zero no limitation is imposed on the size of members inboxes.
+However, you may also set a maximum limit. In reality the maximum limit imposed is spread over both a members
+Inbox and Sentbox. When the limit is reached (adding both boxes together), the member will still be allowed to receive Private Messages
+but will no longer be allowed to send any until they have removed some old messages to below their maximum limit.
+[end]
+
+[image-uploads]
+
+<strong>Image Uploads</strong><br /><br />
+Allowing members to upload images to your server is defined in a members User Group Permissions. if you are allowing uploading it is
+necessary for you to create a folder where images will be uploaded to. This MUST be created under the standard
+'wp-content' folder. When this folder has been created and the necessary permissions on the folder set, enter the name of the folder in this option.
+Only the folder name is required.<br /><br />
+Please note that image uploading is ONLY available through the TinyMCE Rich Text Editor and the php GD graphics library is required.
+[end]
+
+[image-enlarging]
+
+<strong>Image Enlargement</strong><br /><br />
+When users include images in their forum posts you have no control over the size of the images and this can sometimes cause display problems - especially with themes that have narrow columns.
+Turning on this option can help resolve that by showing images as a thumbnail which will expand in a popup window to their full size when clicked on.
+A small mouse icon is also placed beside the thumbnail.<br /><br />
+You set the size of the thumbnail (it's width in pixels) here.
+[end]
+
+[democracy-polls-support]
+
+<strong>Democracy Polls Support</strong><br /><br />
+Simple:Press Forum has built in support for the excellent <a href="http://blog.jalenack.com/archives/democracy/ >Democracy Polls WP Plugin</a> by
+Andrew Sutherland. All you need to include Democracy Polls in your posts is activate the plugin. The same method used to embed polls in
+blog posts is used in a forum post.<br /><br />
+<strong>Democracy Polls CSS styling</strong><br />
+A folder named 'democracy' can be found under the Simple:Press Forum folder that contains two CSS files and an image. These should be moved into
+the Democracy Polls folder (also called 'democracy'). This will enable matched styling in both blog posts and forum posts.
+[end]
+
+[post-ratings]
+
+<strong>Post Ratings Support</strong><br /><br />
+Simple:Press Forum supports the ability to allow users to rate posts.  The posts can be rated by users with proper permissions.  The ratings engine does record the IP for guests and USER ID for members when a rating is made in an effort to prevent multiple ratins by the same person.  It should be noted that this is not a fail safe method for guests as many ISPs assign users different IPs at different times.<br /><br />
+To enable post ratings, check the "Enable Post Ratins" box.  Permission for members/guests to rate posts is provided with the "Can rate posts" permission that can be applied to permissions set and then user groups.  When enabling post ratings, you have two methods of ratings that may be used to rate posts.<br /><br />
+<strong>Thumbs Up / Thumbs Down</strong><br /><br />
+When utilizing the Thumbs Up / Thumbs Down rating method, a forum visitor with post rating permission can either vote up (Thumbs Up) or vote down (Thumbs Down) the post.  A Thumbs Up vote adds +1 to the post rating score displayed.  A Thumbs Down vote adds -1 to the post rating score displayed.  This rating system is consistent with the <a target="_blank" ""href="http://www.reddit.com/">reddit</a> voting system.<br /><br />
+<strong>Stars</strong><br /><br />
+When utilizing the Stars rating method, a forum visitor with post rating permission can rate a post with a score of 1 - 5 stars.  Each star rating is added to the current star sum.  The post rating score displaye is then the star sum divided by the number of votes.  The number of stars displayed for a score is displayed in integer stars rounded down, but the score itself is shown to 1 decimal place.<br /><br />
+<strong>*** WARNING ***</strong><br /><br />
+The desired rating system is selected via the "Select Post Rating Style" radio button.  However, once you select a rating system and you have started accumlating votes, you cannot change post ratings style without a complete reset of the post rating data system.  When attempting to change the post ratings style, you will be prompted to confirm the changed setting and your database will be purged of post rating data.  This is because of the inherent difference in post rating score between the two systems.
+[end]
+
+[topic-status-sets]
+
+<strong>Topic Status Sets</strong><br /><br />
+A 'Topic Status Set' is an optional list of flags - or 'states' that a topic can go through. For example, if your forum is used
+as a support tool, a new topic could be flagged as, for exmaple, 'New Issue'. The first response could change the state to 'Unresolved' and
+when the problem is dealt with, 'Resolved'.<br /><br />
+These sets of flags are user-definable and you can define as many as you need. Topic Status Sets are assigned to forums in the 'Manage Forums'
+admin panel by clicking on the 'status' icon and selecting the set to assign.
+[end]
+
+[post-editing]
+
+<strong>Post Editing</strong><br /><br />
+By default Simple:Press Forum uses the TinyMCE Rich Text Editor for post entry. This is the same Rich Text Editor that is
+available for post and page creation within WordPress.<br /><br />
+If preferred, one of the 'QuickTags' editor can be invoked which uses standard HTML syntax, or a plain textarea box can be used.<br /><br />
+Please note that when the TinyMCE editor is set as the default, individual members can opt to use the
+Quicktags editor via a setting in their user profile if they are granted the permission to do so.<br /><br />
+<b>Rejecting Embedded Formatting</b><br />
+Some users may paste content into the editing window that has been copied from a source with embedded formatting such as MS Word or
+even from their browser display. This can add a large amount of unwanted and unseen data to a post and will usually force a unique display
+when the post is shown.<br />
+You can set an option here to reject any such post and force the user to paste their content into one of the toolbar filters (MS Word or Text)
+that automatically removes the embedded formatting. This is strongly recommended when  using the Rich Text Editor.
+[end]
+
+[editor-language]
+
+<strong>Editor Language</strong><br /><br />
+Thus setting allows you to select the language file to be used by the TinyMCE Rich Text Editor. Please note this setting has NO effect
+on any other part of the forum. It is also important to note that not all languages are available for TinyMCE. Availability is, however,
+checked with every major release of Simple:Press Forum,. it is also possible to add your own language files should it become available.<br />
+This panel can also turn on support for right to left languages.
+[end]
+
+[editor-styles]
+<strong>Editor Styles</strong><br /><br />
+The three editors all come with their own stylesheet which can be customised. Stylesheets are stored in the <b>/styles/editors</b> folders
+under the appropriate editor name.<br /><br />
+It is recommended that if you wish to customise the styles you create a copy of existing stylesheets and customise those to your requirements.
+Then on this panel enter the name of the replacement stylesheet which will then be used instead of the default.
+In this way, your changes will not be overwritten with a version update.
+[end]
+
+[editor-relative]
+<strong>Relative URL's</strong><br /><br />
+When using the TinyMCE editor, you can choose to have internal URL's (links) saved as 'relative' or as 'absolute'.
+[end]
+
+[remove-editor-buttons]
+<strong>Removing Buttons from the Rich Text Editor (TinyMCE) Toolbar</strong><br /><br />
+To remove unwanted buttons (and separators) from the TinyMCE toolbar, simply click on the button to remove and respond to the
+confirmation dialog. When you have removed those not wanted, click on the Update button. Note that you can restore the defaults
+at any time and start again.<br /><br />
+Select buttons for removal carefully. Note that the 'Emotions' button (smileys) will be automatically removed if you have chosen
+WordPress or Custom Smileys (see Smileys tab). Note also that removing the 'Paste Text' and 'Paste Word' buttons will also disable
+the option to reject embedded formatting in posts (see the Global Tab of Forum Options) regardless of how that option is set.
+[end]
+
+[reorder-editor-buttons]
+<strong>Re-Ordering Buttons on the Rich Text Editor (TinyMCE) Toolbar</strong><br /><br />
+To re-order the buttons, simply click on the button to move and drag it to it's new home in the toolbar. When you have finished re-ordering
+click on the update button to save. Restoring the defaults also restores the default order.<br />
+Please note that the 'standard' buttons are separate from the 'plugin' buttons which always appear on the end of the toolbar.
+[end]
+
+[user-login]
+
+<strong>Show Login/Logout Links</strong><br />
+This option enables you to hide the login button from the forum pages.
+This is most useful if your site already displays these items elsewhere, such as on a sidebar.<br /><br />
+<b>Use In Line Login Form</b><br />
+The quickest login form drops down from the login bar at the top of the forum. However, if you have skinned your login forms or use a
+custom login plugin, you may prefer to turn this off and force the built in forms.<br /><br />
+<b>Skin Login Forms</b><br />
+The forum will remove the 'WordPress' badge replacing with a generic forum image if this option is turned on.
+[end]
+
+[user-registration]
+
+<strong>Show Regsitration Links</strong><br />
+This option enables you to hide the registration button from the forum pages.
+This is most useful if your site already displays these items elsewhere, such as on a sidebar.<br /><br />
+<strong>Spam Detection</strong><br />
+Simple:Press Forum can use the effective 'math question' query to prevent spam posts being made automatically.
+This option is set up in the User Group Permissions. However, the same tool can also be used on the user registration form
+to help counter bogus registrations which are a general nuisance. Please note that if this feature is invoked it applies to both
+Simple:Press Forum's registration form and the standard WordPress form.
+[end]
+
+[registration-policy]
+
+<strong>Registration/Site Policy</strong><br />
+Optionally display site and registration policy text before the registation form appears. This can include an optional
+check box to enforce acceptance before registration is allowed.
+[end]
+
+[no-login]
+<strong>No Login</strong><br /><br />
+Before forum Logon/Logout and Registration buttons and icons become visible, your WordPress site must be set up to allow
+people to register. Check the WP admin page under Options > General (Or Settings > General in WP2.5) and look for the
+'Membership' check box. This option turns on user registrations and enables to forum to allow logins from registered members.
+[end]
+
+[forum-ranks]
+
+<strong>Forum Ranks</strong><br /><br />
+This feature allows you to assign different 'ranks' to members depending on how many posts they have made.  In addition, when a member reaches a defined forum rank, it is possible to auto assign this member to a User Group.  This auto assignment makes it possible to grant additional permissions to users upon reaching specific plateaus based on number of posts. A member's rank' will be displayed along with each of their posts in the member's data box'. <br /><br />
+To create forum ranks, enter the name and the number of posts up to which it applies. Optionally, you may select a currently defined User Group in the drop down list to assign members to when the forum rank is obtained.<br /><br />
+If you use all the available fields simply save the options panel and another blank field will appear. There is no limit to the number of rankings you can define.<br /><br />
+The final ranking should have a very high post count or if a user exceeds the final specified post count, there will be no ranking for the user to be assinged to and instead the user will get a default forum ranking of 'Member'.
+[end]
+
+[custom-icon]
+
+<strong>Custom Icons</strong><br /><br />
+There is an allowance for up to three custom icons to be placed on the Login Bar (to the left of the Login/Logout icon).
+These can be used to set links to items outside of the forum such as, for example, an FAQ, Help, Contact or T & C Page.<br /><br />
+<strong>Display Text</strong<br />
+Enter here the text that displays within the link. If your icon is of a type that incorporates the text then leave this field empty.<br /><br />
+<strong>Target URL</strong><br />
+Enter the full URL needed for the target page of the link.<br /><br />
+<strong>Custom Icon</strong><br />
+Enter here the name of the icon that you wish to be displayed. Custom icons MUST be placed in a folder called 'custom' beneath the folder that contains the icon set
+you are using for your forum display. The Default icon set has this folder already defined and a small group of example icons. Note that only the full file name of the
+custom icon should be entered. The system will look for it in the appropriate 'custom' folder.
+[end]
+
+[editor-message]
+
+<strong>Custom Message Above Editor</strong><br /><br />
+Any text you enter here will be displayed immediately above the text editor for either, or both, a new Topic or new Post.
+This might, for example, be an instruction to the user to include certain details in their post, notes on formatting or
+a brief reminder about content policy.
+[end]
+
+[editor-intro]
+<strong>Custom In-Line Editor Message</strong><br /><br />
+You may optionally display a custom message inside the editor window as the first text of a new topic post. This could be
+used, for example, to request special information from the user such as which browser do they use - possibly important information
+if your forum is used for support purposes.
+[end]
+
+[aiosp]
+
+<strong>All In One SEO Pack Integration</strong><br /><br />
+If you have installed the optional WordPress All In One SEO Pack plugin, you can control the configuraton of the WP page title on Simple:Press Forum pages here.<br /><br />
+If you would like the topic title (if on a topic page) included in the WP page title, select the checkbox.  If you would like the forum title (if on a forum page) included in the WP page title, select the checkbox.  In addition, please enter the separator text that you would like to use between the Simple:Press Forum page title components. Normally, this will be the same separator you used in the AIOSP settings page.  If you do not select any of the topic or forum titles to be included, only the Simple:Press Forum page name will be used in the WP page title (unless completely removed via the options panel).
+[end]
+
+[custom-fields]
+
+<strong>Custom Profile Fields</strong><br /><br />
+If you would like to add additional fields in the Simple:Press Forum profile, you can do so here.  You create the custom field by enetering a name for the custom field and a custom field type. The custom field name is the label that is shown in the various profile forms.  The custom field types currently allowed are a checkbox, an input box and a textarea.<br /><br />
+After saving the custom field, users will be able to update the field from their profile.  After saving the custom field, the forum will reload and you will be able to enter another custom field.<br /><br />
+You may also delete existing custom profile fields here.  Upon deletion, the custom field will be removed as well as any user filled information in that custom field.<br /><br />
+It is worth noting that any custom profile fields defined here will only be availabe in the forum and not in the WordPress forum.
+[end]

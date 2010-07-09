@@ -1,0 +1,54 @@
+Simple:Press Forum
+Themes Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[Misplaced_Icons]
+
+Many themes will set all images to 'float' left or right. This literally means display to the far left
+or far right. When Simple:Press Forum displays a page this can result in icons being misplaced from where they are
+set to display. To try and correct this:
+<ol>
+<li>Open the theme <b>style.css</b> file in edit mode</li>
+<li>Scroll down and look for an 'img' directive. This may look something like this:<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float: left;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /></li>
+<li>Try commenting this directive out to see if that corrects the problem. (To comment out
+CSS entries place comment markers around the line as in:<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*float: left;*/<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /></li>
+</ol>
+[end]
+
+[Unwanted_Image_Borders]
+
+Many themes will display all images with a border. Simple:Press Forum attempts to override this but
+sometimes border will appear where they are not wanted. To try and correct this:
+<ol>
+<li>Open the theme <b>style.css</b> file in edit mode</li>
+<li>Scroll down and look for an 'img' directive. This may look something like this:<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid black;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /></li>
+<li>Try commenting this directive out to see if that corrects the problem. (To comment out
+CSS entries place comment markers around the line as in:<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;img {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*border: 1px solid black;*/<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /></li>
+</ol>
+[end]
+
+[Forum_Column_Too_Narrow]
+
+A forum really requires a wider column than many WordPress themes are designed for. It is possible to
+create a special template for the forum removing sidebars and any other unwanted content so that it can
+utilise the space to the best advantage.<br /><br />
+Please visit this <a href="http://simplepressforum.com/creating-a-wordpress-page-template/" >tutorial on how to create such a template</a>.<br /><br />
+If you do not wish to create a new template for your forum it is worth looking at the forum options that will help squeeze the forum into
+the available display width set by your theme.<br />
+Access the 'Forum > Manage Options' admin screen and click on the 'Posts' tab. In the 'Post View Formatting' collection there is the
+option to show the user information data <b>above</b> the post content instead of to the side. This is worth considering if space is limited.<br /><br />
+Note also that via the 'Forum' and 'Topic' tabs, you can turn off some of the columns that may also help to allow a better fit in a tight space.
+[end]

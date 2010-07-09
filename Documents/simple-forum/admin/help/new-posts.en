@@ -1,0 +1,63 @@
+Simple:Press Forum
+New Posts Help File (English)
+$LastChangedDate: 2009-01-11 20:15:33 +0000 (Sun, 11 Jan 2009) $
+$Rev: 1180 $
+
+[Members_View]
+
+When a member logs in to the forum the following actions take place:<br />
+<ol>
+	<li>The 'last visited' timestamp is retrieved from their user record.</li>
+	<li>Topics are scanned for any posts that have been made to them since that timestamp.</li>
+	<li>A 'new-posts' array is created in their user record of these topic ids.</li>
+	<li>At the same time a separate 'new-posts-time' timestamp is recorded noting the time the topics were scanned.</li>
+	<li>The page (or template tag etc) is displayed and any topics being included in the display that are in the users
+	'new-posts' list are marked accordingly.</li>
+</ol><br />
+When the member selects to view a topic (and that means the posts of a topic), the following actions are triggered:<br />
+<ol>
+	<li>The members 'new-posts' list is checked to determine if the one being selected to view is in the list.
+	If it is then it is removed from the members 'new-posts' list.</li>
+	<li>The previous 'new-posts-time' timestamp is retrieved.</li>
+	<li>Topics are scanned for any posts that have been made to them since that timestamp.</li>
+	<li>A 'new-posts' array is updated if anything new is found (i.e., added by a different user also on-line).</li>
+	<li>The 'new-posts-time' timestamp is updated.</li>
+	<li>The page displays as before.</li>
+</ol><br />
+This process continues with every new page loaded by the member.<br /><br />
+There are two ways for the member to 'leave' the forum. They can physically log out - or they can be assumed to be
+gone by the time-out feature. This is set at 15 minutes (minimum) of no activity by the member.<br />
+When the member either logs out or is deemed to have left the site, the following actions take place:<br />
+<ol>
+	<li>The 'last visited' timestamp is updated in their user record.</li>
+	<li>They are removed from the sftrack table as no longer on-line.</li>
+</ol><br />
+You will note if you follow the above paths, that when a member is deemed to be no longer active, their 'new-posts' list
+will be regenerated at their next login <b>from the time of their last visit</b>. Any topics with unread posts that they
+did NOT review on their previous session will no longer be marked as 'unread'.<br />
+Note also that the members 'new post' view will contain the number of entries specified in the forum options.
+Therefore the list can contain topics that the member HAS already read but are still classed as 'recent' and
+will not display the 'unread' icon. Conversely, if the members new-post list is longer than the display setting,
+not ALL unread posts will be shown in the list but will appear as the member views the marked new posts.
+[end]
+
+[Admins_View]
+
+Note that in Version 4.0 of Simple:Press Forum this refers to the Quicklinks 'New/Recently Updated Topics' list.<br /><br />
+The basic processing of the Admins view is the same as for members but with an extra step. When new posts are made, the topic id
+is placed in the sfwaiting table. Note that if the topic id is already in the sfwaiting table then the post count is added to
+against that topic.<br /><br />
+This table is a 'queue' of new posts that the Admin has not yet reviewed and may, if being used, contain posts that require approval.<br />
+The difference to members processing is that the Admins 'new-post' list is created by first including the sfwaiting table.
+Only if the entry count in the sfwaiting table is lower than the display setting for the Quicklinks view does the list go on to
+contain topics already seen.<br /><br />
+In this way, when the Admin logs out or is deemed to be inactive, he does NOT lose new and unread posts from his list
+because the sfwaiting table will only have entries removed when either (a) the Admin views the topic or (b) the Admin uses the 'remove'
+button shown above the standard new posts view.<br /><br />
+In the QuickLinks list, topics that appear in the sfwaiting table are displayed in red. If, however, the topic post(s) require approval
+(moderation), then the topic is displayed in blue. Both red and blue entries also have bullets beside them.<br /><br />
+<b>Notes regarding Moderators</b><br /><br />:
+Whilst a moderator may be granted permission to review new posts from the admin queue (sfwaiting) and also to approve posts requiring
+moderation, the Admin has the option to disallow those topics being removed from the queue - usually because he wants to make sure
+he also gets to see them himself.
+[end]

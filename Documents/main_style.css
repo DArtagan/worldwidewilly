@@ -1,0 +1,52 @@
+html {
+	font-size: 12pt;
+	color: #000;
+	margin-left: 20px;
+	background-image: url("The W Background.png");
+	background-repeat: no-repeat;
+	background-attachement: fixed;
+	background-position: 109% 135%;}
+h1 {
+	margin-left: -10px;
+	font-size: 35px;
+	color: #f00;}
+h2 {
+	font-size: 150%;
+	margin-left:-10px;}
+h3 {
+	color: #736F6E;
+	margin-left:-5px;}
+p {
+	text-align: left;
+	/*text-indent: .5in;*/}
+.center {
+	text-align: center;
+	text-indent: 0}
+img {
+	width: 200px}
+span.letter {
+	width:.675em;
+	float:left;
+	font-size:325%;
+	font-family:algerian, courier;
+	line-height:50%;}
+div#thoughts {
+	text-align: center;
+	font-family: verdana;
+	color: green;
+	text-indent: 0;}
+div#add-ons ol {
+	list-style-type: upper-roman}
+input[type="text"] {background-color: white}
+
+a:link    {color: black}
+a:visited {color: purple}
+a:active  {color: mediumblue}
+a:hover   {color: mediumblue}
+
+
+
+/*You can use any combination of selectors*/
+/*Remember the class attribute*/
+/*Font properties*/
+/*Aspect Auto Ajust*/

@@ -1,0 +1,1551 @@
+<html>
+<head>
+<style>
+td {border-style: solid; border-left-width: 0pt; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 0pt; border-color: #000077; padding: 2pt; font-size: 9pt; font-family: Helvetica,Arial,Sans serif;}
+td.firstcol {border-left-width: 1pt;}
+td.header { font-weight: bold;}
+td.tabletitle {border-left-width: 1pt; font-size: 11pt; font-weight: bold; color: #FFFFFF; margin-bottom: 0;}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<h3>Simple:Press Forum - Database Schema - Version 4.0.0</h3>
+  <p> <!-- an empty line between the tables --> </p>   
+  <!-- Table @prefix@_sfdefpermissions --> 
+   <!-- Table wp_sfdefpermissions --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfdefpermissions      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >permission_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >group_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >usergroup_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">permission_role</td>
+      <td style="border-bottom-width: 1pt;">mediumint</td>
+      <td style="border-bottom-width: 1pt;">8</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfforums --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfforums      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >forum_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_name</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >Index</td>
+      <td >group_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_seq</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_desc</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_status</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_slug</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_rss</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_icon</td>
+      <td >varchar</td>
+      <td >25</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_count</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_rss_private</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">topic_status_set</td>
+      <td style="border-bottom-width: 1pt;">bigint</td>
+      <td style="border-bottom-width: 1pt;">20</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfgroups --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfgroups      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >group_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >group_name</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >group_seq</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >group_desc</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >group_rss</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">group_icon</td>
+      <td style="border-bottom-width: 1pt;">varchar</td>
+      <td style="border-bottom-width: 1pt;">25</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">NULL</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfmembers --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfmembers      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >user_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >display_name</td>
+      <td >varchar</td>
+      <td >100</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >pm</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >moderator</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >avatar</td>
+      <td >varchar</td>
+      <td >50</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >signature</td>
+      <td >tinytext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >sigimage</td>
+      <td >tinytext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >editor</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >posts</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >lastvisit</td>
+      <td >datetime</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >subscribe</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >buddies</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >newposts</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >checktime</td>
+      <td >datetime</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >admin</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >watches</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >posts_rated</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">admin_options</td>
+      <td style="border-bottom-width: 1pt;">longtext</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">NULL</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfmemberships --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfmemberships      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >membership_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >user_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">usergroup_id</td>
+      <td style="border-bottom-width: 1pt;">mediumint</td>
+      <td style="border-bottom-width: 1pt;">8</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfmessages --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfmessages      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >message_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >sent_date</td>
+      <td >datetime</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >from_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >to_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >title</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >message</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >message_status</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >inbox</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >sentbox</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >is_reply</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">message_slug</td>
+      <td style="border-bottom-width: 1pt;">text</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfmeta --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfmeta      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >meta_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >meta_type</td>
+      <td >varchar</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >meta_key</td>
+      <td >varchar</td>
+      <td >100</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">meta_value</td>
+      <td style="border-bottom-width: 1pt;">longtext</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">NULL</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfnotice --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfnotice      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >id</td>
+      <td >varchar</td>
+      <td >30</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >item</td>
+      <td >varchar</td>
+      <td >15</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >message</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">ndate</td>
+      <td style="border-bottom-width: 1pt;">datetime</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfpermissions --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfpermissions      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >permission_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >usergroup_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">permission_role</td>
+      <td style="border-bottom-width: 1pt;">mediumint</td>
+      <td style="border-bottom-width: 1pt;">8</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfpostratings --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfpostratings      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >rating_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >vote_count</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >ratings_sum</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >ips</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">members</td>
+      <td style="border-bottom-width: 1pt;">longtext</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">NULL</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfposts --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfposts      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >Index</td>
+      <td >post_content</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_date</td>
+      <td >datetime</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >Index</td>
+      <td >topic_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >user_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >Index</td>
+      <td >forum_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >guest_name</td>
+      <td >varchar</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >guest_email</td>
+      <td >varchar</td>
+      <td >50</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_status</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_pinned</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_index</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_edit</td>
+      <td >mediumtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">poster_ip</td>
+      <td style="border-bottom-width: 1pt;">varchar</td>
+      <td style="border-bottom-width: 1pt;">15</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfroles --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfroles      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >role_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >role_name</td>
+      <td >varchar</td>
+      <td >50</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >role_desc</td>
+      <td >varchar</td>
+      <td >150</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">role_actions</td>
+      <td style="border-bottom-width: 1pt;">longtext</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfsettings --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfsettings      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >setting_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >setting_name</td>
+      <td >varchar</td>
+      <td >50</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >setting_value</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">setting_date</td>
+      <td style="border-bottom-width: 1pt;">datetime</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sftopics --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sftopics      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >topic_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_name</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_date</td>
+      <td >datetime</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_status</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >Index</td>
+      <td >forum_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >user_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_pinned</td>
+      <td >smallint</td>
+      <td >1</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_subs</td>
+      <td >longtext</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_sort</td>
+      <td >varchar</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_opened</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >blog_post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_slug</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_count</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >topic_status_flag</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">topic_watches</td>
+      <td style="border-bottom-width: 1pt;">longtext</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">NULL</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sftrack --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sftrack      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >trackuserid</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >trackname</td>
+      <td >varchar</td>
+      <td >50</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">trackdate</td>
+      <td style="border-bottom-width: 1pt;">datetime</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;"></td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfusergroups --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfusergroups      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >usergroup_id</td>
+      <td >mediumint</td>
+      <td >8</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >&nbsp;</td>
+      <td >NULL</td>
+      <td >Yes</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >usergroup_name</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >usergroup_desc</td>
+      <td >text</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >Yes</td>
+      <td >NULL</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">usergroup_is_moderator</td>
+      <td style="border-bottom-width: 1pt;">tinyint</td>
+      <td style="border-bottom-width: 1pt;">4</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p>   <!-- Table wp_sfwaiting --> 
+  <table WIDTH="100%" CELLSPACING=0>
+    <TR VALIGN="top" style="background-color: #000077; color: #FFFFFF;">
+      <TD class="tabletitle" COLSPAN="9">        wp_sfwaiting      </TD>
+    </TR>
+    <tr>
+      <td class="header" style="border-left-width: 1pt;">Key</td>
+      <td class="header">Column name</td>
+      <td class="header">Type</td>
+      <td class="header">Size</td>
+      <td class="header">Decimals</td>
+      <td class="header">Unsigned</td>
+      <td class="header">Nullable</td>
+      <td class="header">Default</td>
+      <td class="header">Auto increment</td>
+    </tr>
+    <tr>      <td class="firstcol" >Pri</td>
+      <td >topic_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >forum_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_count</td>
+      <td >int</td>
+      <td >4</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td ></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" >&nbsp;</td>
+      <td >post_id</td>
+      <td >bigint</td>
+      <td >20</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >&nbsp;</td>
+      <td >0</td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>      <td class="firstcol" style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">user_id</td>
+      <td style="border-bottom-width: 1pt;">bigint</td>
+      <td style="border-bottom-width: 1pt;">20</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+      <td style="border-bottom-width: 1pt;">Yes</td>
+      <td style="border-bottom-width: 1pt;">0</td>
+      <td style="border-bottom-width: 1pt;">&nbsp;</td>
+    </tr>
+  </table>
+
+  <p> <!-- an empty line between the tables --> </p></body>
+</html>

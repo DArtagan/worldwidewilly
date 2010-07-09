@@ -1,0 +1,28 @@
+Simple:Press Forum
+Slugs Help File (English)
+$LastChangedDate: 2009-01-12 05:06:51 +0000 (Mon, 12 Jan 2009) $
+$Rev: 1186 $
+
+[Forum_Slugs]
+
+The Forum Slug is the unique identifier used to create the forum URL. It is forged from the forum name in the same way that post and page
+slugs are created within WordPress.<br /><br />
+If, for any reason, a forum slug is unreadable by the browser then the forum will fail to display and a 404 message will be sent. It may be that
+an odd character was used in the forum name.<br /><br />
+The forum slug can be edited in the 'Forum > Forums' admin panel. Click the 'Edit' button beside the problem forum to edit the forum details
+which includes the slug.<br /><br />
+<b>Remember:</b> A slug must contain no spaces or odd characters and should only be edited as a last resort. The
+slug is what will be recorded in search engines etc.
+[end]
+
+[Topic_Slugs]
+
+The Topic Slug is the unique identifier used to create the topic part of the URL. It is forged from the topic name in the same way that post and page
+slugs are created within WordPress.<br /><br />
+If, for any reason, a topic slug is unreadable by the browser then the topic posts will fail to display and a 404 message will be sent. It may be that
+an odd character was used in the topic name.<br /><br />
+The topic slug can be edited by the forum Administrator in the forums topic listing. Click the 'Edit Topic Title' button (Admin Tool Icons) beside the problem topic. This
+tool enables the admin to edit the actual title AND the topic slug.<br /><br />
+<b>Remember:</b> A slug must contain no spaces or odd characters and should only be edited as a last resort. The
+slug is what will be recorded in search engines etc.
+[end]
